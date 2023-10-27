@@ -1,20 +1,17 @@
-# Licensed to the Apache Software Foundation (ASF) under one
-# or more contributor license agreements.  See the NOTICE file
-# distributed with this work for additional information
-# regarding copyright ownership.  The ASF licenses this file
-# to you under the Apache License, Version 2.0 (the
-# "License"); you may not use this file except in compliance
-# with the License.  You may obtain a copy of the License at
-#
-#   http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-# KIND, either express or implied.  See the License for the
-# specific language governing permissions and limitations
-# under the License.
-
+#Licensed to the Apache Software Foundation (ASF) under one
+#or more contributor license agreements.  See the NOTICE file
+#distributed with this work for additional information
+#regarding copyright ownership.  The ASF licenses this file
+#to you under the Apache License, Version 2.0 (the
+#"License"); you may not use this file except in compliance
+#with the License.  You may obtain a copy of the License at
+#http://www.apache.org/licenses/LICENSE-2.0
+#Unless required by applicable law or agreed to in writing,
+#software distributed under the License is distributed on an
+#"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#KIND, either express or implied.  See the License for the
+#specific language governing permissions and limitations
+#under the License.
 #The following fields are used for back-end
 backend:
   base:
@@ -485,28 +482,7 @@ ui:
   how_to_format:
     title: Cómo formatear
     desc: >-
-      <ul class="mb-0">
-       <li><p class="mb-2">Para hacer enlaces</p>
-       <pre class="mb-2">
-       <code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com)
-       </code>
-       </pre>
-       </li>
-       <li><p class="mb-2">Colocar saltos de línea entre párrafos</p></li>
-       <li><p class="mb-2"><em>_cursiva_</em> o **<strong>negrita</strong>**</p></li>
-       <li><p class="mb-2">Indentar el código con 4 espacios</p></li>
-       <li><p class="mb-2">Citar colocando <code>&gt;</code> al inicio de la línea</p></li>
-       <li><p class="mb-2">Escape con backticks <code>`como _esto_`</code></p></li>
-       <li><p class="mb-2">Crear barreras de código con backticks <code>`</code></p>
-       <pre class="mb-0">
-       <code>
-       ```<br/>
-       código aquí<br/>
-       ```
-       </code>
-       </pre>
-       </li>
-      </ul>
+      <ul class="mb-0"> <li><p class="mb-2">Para hacer enlaces</p> <pre class="mb-2"> <code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com) </code> </pre> </li> <li><p class="mb-2">Colocar saltos de línea entre párrafos</p></li> <li><p class="mb-2"><em>_cursiva_</em> o **<strong>negrita</strong>**</p></li> <li><p class="mb-2">Indentar el código con 4 espacios</p></li> <li><p class="mb-2">Citar colocando <code>&gt;</code> al inicio de la línea</p></li> <li><p class="mb-2">Escape con backticks <code>`como _esto_`</code></p></li> <li><p class="mb-2">Crear barreras de código con backticks <code>`</code></p> <pre class="mb-0"> <code> ```<br/> código aquí<br/> ``` </code> </pre> </li> </ul>
   pagination:
     prev: Anterior
     next: Siguiente
@@ -1098,12 +1074,9 @@ ui:
   delete:
     title: Eliminar esta publicación
     question: >-
-      No recomendamos <strong>borrar preguntas con respuestas</strong> porque esto priva a los lectores futuros de este conocimiento.
-      </p><p>
-      El borrado repetido de preguntas respondidas puede resultar en que tu cuenta se bloquee para hacer preguntas. ¿Estás seguro de que deseas borrarlo?
+      No recomendamos <strong>borrar preguntas con respuestas</strong> porque esto priva a los lectores futuros de este conocimiento. </p><p> El borrado repetido de preguntas respondidas puede resultar en que tu cuenta se bloquee para hacer preguntas. ¿Estás seguro de que deseas borrarlo?
     answer_accepted: >-
-      <p>No recomendamos <strong>borrar la respuesta aceptada</strong> porque esto priva a los lectores futuros de este conocimiento.</p>
-
+      <p>No recomendamos <strong>borrar la respuesta aceptada</strong> porque esto priva a los lectores futuros de este conocimiento.</p> 
       El borrado repetido de respuestas aceptadas puede resultar en que tu cuenta se bloquee para responder. ¿Estás seguro de que deseas borrarlo?
     other: '¿Estás seguro de que deseas borrarlo?'
     tip_answer_deleted: Esta respuesta ha sido eliminada
