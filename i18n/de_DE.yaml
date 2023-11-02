@@ -5,17 +5,14 @@
 # to you under the Apache License, Version 2.0 (the
 # "License"); you may not use this file except in compliance
 # with the License.  You may obtain a copy of the License at
-#
-#   http://www.apache.org/licenses/LICENSE-2.0
-#
+# http://www.apache.org/licenses/LICENSE-2.0
 # Unless required by applicable law or agreed to in writing,
 # software distributed under the License is distributed on an
 # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-
-#The following fields are used for back-end
+# The following fields are used for back-end
 backend:
   base:
     success:
@@ -480,7 +477,7 @@ backend:
       other: accept
     accepted:
       other: accepted
-#The following fields are used for interface presentation(Front-end)
+# The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
     title: Wie man formatiert
@@ -671,7 +668,7 @@ ui:
             range: Anzeige des Namens mit bis zu 35 Zeichen.
         slug_name:
           label: URL-Slug
-          desc: 'Muss den Zeichensatz "a-z", "0-9", "+ # - " verwenden.'
+          desc: 'Muss den Zeichensatz "a-z", "0-9", "+ #  - " verwenden.'
           msg:
             empty: URL-Slug darf nicht leer sein.
             range: URL-Slug mit bis zu 35 Zeichen.
@@ -712,7 +709,7 @@ ui:
           label: Anzeigename
         slug_name:
           label: URL-Slug
-          info: 'Muss den Zeichensatz "a-z", "0-9", "+ # - ." verwenden'
+          info: 'Muss den Zeichensatz "a-z", "0-9", "+ #  - ." verwenden'
         desc:
           label: Beschreibung
         edit_summary:
