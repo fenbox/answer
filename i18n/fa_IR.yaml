@@ -701,6 +701,7 @@ ui:
   edit_tag:
     title: ویرایش تگ‌
     default_reason: ویرایش تگ‌
+    default_first_reason: Add tag
     form:
       fields:
         revision:
@@ -746,6 +747,7 @@ ui:
   edit_answer:
     title: ویرایش جواب
     default_reason: ویرایش جواب
+    default_first_reason: Add answer
     form:
       fields:
         revision:
@@ -776,6 +778,7 @@ ui:
     title: سوالی اضافه کنید
     edit_title: سوال را ویرایش کنید
     default_reason: سوال را ویرایش کنید
+    default_first_reason: Add question
     similar_questions: سؤال های مشابه
     form:
       fields:
