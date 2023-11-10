@@ -701,6 +701,7 @@ ui:
   edit_tag:
     title: 編輯標籤
     default_reason: 編輯標籤
+    default_first_reason: Add tag
     form:
       fields:
         revision:
@@ -746,6 +747,7 @@ ui:
   edit_answer:
     title: 編輯回答
     default_reason: 編輯回答
+    default_first_reason: Add answer
     form:
       fields:
         revision:
@@ -776,6 +778,7 @@ ui:
     title: 發問
     edit_title: 編輯問題
     default_reason: 編輯問題
+    default_first_reason: Add question
     similar_questions: 相似的問題
     form:
       fields:
