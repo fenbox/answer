@@ -701,6 +701,7 @@ ui:
   edit_tag:
     title: Ubah Tag
     default_reason: Sunting tag
+    default_first_reason: Add tag
     form:
       fields:
         revision:
@@ -746,6 +747,7 @@ ui:
   edit_answer:
     title: Sunting jawaban
     default_reason: Edit jawaban
+    default_first_reason: Add answer
     form:
       fields:
         revision:
@@ -776,6 +778,7 @@ ui:
     title: Add Question
     edit_title: Edit Question
     default_reason: Edit question
+    default_first_reason: Add question
     similar_questions: Similar questions
     form:
       fields:
