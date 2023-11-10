@@ -701,6 +701,7 @@ ui:
   edit_tag:
     title: Tag bearbeiten
     default_reason: Tag bearbeiten
+    default_first_reason: Add tag
     form:
       fields:
         revision:
@@ -746,6 +747,7 @@ ui:
   edit_answer:
     title: Antwort bearbeiten
     default_reason: Antwort bearbeiten
+    default_first_reason: Add answer
     form:
       fields:
         revision:
@@ -776,6 +778,7 @@ ui:
     title: Frage hinzufügen
     edit_title: Frage bearbeiten
     default_reason: Frage bearbeiten
+    default_first_reason: Add question
     similar_questions: Ähnliche Fragen
     form:
       fields:
