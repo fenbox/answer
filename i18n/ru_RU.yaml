@@ -701,6 +701,7 @@ ui:
   edit_tag:
     title: Изменить тег
     default_reason: Правка тега
+    default_first_reason: Add tag
     form:
       fields:
         revision:
@@ -746,6 +747,7 @@ ui:
   edit_answer:
     title: Редактировать ответ
     default_reason: Редактировать ответ
+    default_first_reason: Add answer
     form:
       fields:
         revision:
@@ -776,6 +778,7 @@ ui:
     title: Добавить вопрос
     edit_title: Редактировать вопрос
     default_reason: Редактировать вопрос
+    default_first_reason: Add question
     similar_questions: Similar questions
     form:
       fields:
