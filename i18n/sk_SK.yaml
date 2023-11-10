@@ -701,6 +701,7 @@ ui:
   edit_tag:
     title: Upraviť značku
     default_reason: Upraviť značku
+    default_first_reason: Add tag
     form:
       fields:
         revision:
@@ -746,6 +747,7 @@ ui:
   edit_answer:
     title: Uprav odpoveď
     default_reason: Uprav odpoveď
+    default_first_reason: Add answer
     form:
       fields:
         revision:
@@ -776,6 +778,7 @@ ui:
     title: Pridať otázku
     edit_title: Upraviť otázku
     default_reason: Upraviť otázku
+    default_first_reason: Add question
     similar_questions: Podobné otázky
     form:
       fields:
