@@ -30,7 +30,7 @@ backend:
     forbidden_error:
       other: Verboten.
     duplicate_request_error:
-      other: Duplicate submission.
+      other: Doppelte Einreichung.
   action:
     report:
       other: Melden
@@ -55,7 +55,7 @@ backend:
     invite_someone_to_answer:
       other: Bearbeiten
     undelete:
-      other: Undelete
+      other: Wiederherstellen
   role:
     name:
       user:
@@ -294,73 +294,73 @@ backend:
   reason:
     spam:
       name:
-        other: spam
+        other: Spam
       desc:
         other: Dieser Beitrag ist eine Werbung oder Vandalismus. Er ist nicht nützlich oder relevant für das aktuelle Thema.
     rude_or_abusive:
       name:
-        other: rude or abusive
+        other: unhöflich oder beleidigend
       desc:
         other: Eine vernünftige Person würde diesen Inhalt als unangemessen für einen respektvollen Diskurs empfinden.
     a_duplicate:
       name:
-        other: a duplicate
+        other: ein Duplikat
       desc:
         other: Diese Frage wurde schon einmal gestellt und hat bereits eine Antwort.
       placeholder:
         other: Gib den Link zur bestehenden Frage ein
     not_a_answer:
       name:
-        other: not an answer
+        other: keine Antwort
       desc:
         other: Das wurde als Antwort gepostet, aber es versucht nicht, die Frage zu beantworten. Sie sollte entweder bearbeitet, kommentiert, als weitere Frage gestellt oder ganz gelöscht werden.
     no_longer_needed:
       name:
-        other: no longer needed
+        other: nicht mehr benötigt
       desc:
         other: Dieser Kommentar ist veraltet oder nicht relevant für diesen Beitrag.
     something:
       name:
-        other: something else
+        other: anderer Grund
       desc:
         other: Dieser Posten erfordert die Aufmerksamkeit des Personals aus einem anderen, oben nicht genannten Grund.
       placeholder:
         other: Lass uns wissen, worüber du dir Sorgen machst
     community_specific:
       name:
-        other: a community-specific reason
+        other: ein Community-spezifischer Grund
       desc:
         other: Diese Frage entspricht nicht den Gemeinschaftsrichtlinien.
     not_clarity:
       name:
-        other: needs details or clarity
+        other: benötigt Details oder Klarheit
       desc:
         other: Diese Frage enthält derzeit mehrere Fragen in einer. Sie sollte sich auf ein einziges Problem konzentrieren.
     looks_ok:
       name:
-        other: looks OK
+        other: sieht OK aus
       desc:
         other: Dieser Beitrag ist gut so wie er ist und nicht von schlechter Qualität.
     needs_edit:
       name:
-        other: needs edit, and I did it
+        other: muss bearbeitet werden, und ich habe es getan
       desc:
         other: Verbessere und korrigiere Probleme mit diesem Beitrag selbst.
     needs_close:
       name:
-        other: needs close
+        other: muss geschlossen werden
       desc:
         other: Eine geschlossene Frage kann nicht beantwortet werden, aber du kannst sie trotzdem bearbeiten, abstimmen und kommentieren.
     needs_delete:
       name:
-        other: needs delete
+        other: muss gelöscht werden
       desc:
         other: Dieser Beitrag wird gelöscht.
   question:
     close:
       duplicate:
         name:
-          other: spam
+          other: Spam
         desc:
           other: Diese Frage ist bereits gestellt worden und hat bereits eine Antwort.
       guideline:
@@ -404,7 +404,7 @@ backend:
       reply_to_you:
         other: hat Ihnen geantwortet
       mention_you:
-        other: mentioned you
+        other: hat dich erwähnt
       your_question_is_closed:
         other: Deine Frage wurde geschlossen
       your_question_was_deleted:
@@ -414,17 +414,17 @@ backend:
       your_comment_was_deleted:
         other: Dein Kommentar wurde gelöscht
       up_voted_question:
-        other: upvoted question
+        other: positiv bewertete Frage
       down_voted_question:
-        other: downvoted question
+        other: negativ bewertete Frage
       up_voted_answer:
-        other: upvoted answer
+        other: positiv bewertete Antwort
       down_voted_answer:
-        other: downvoted answer
+        other: negativ bewertete Antwort
       up_voted_comment:
-        other: upvoted comment
+        other: positiv bewerteter Kommentar
       invited_you_to_answer:
-        other: invited you to answer
+        other: hat dich eingeladen, zu antworten
   email_tpl:
     change_email:
       title:
@@ -468,17 +468,17 @@ backend:
         other: "Dies ist eine Test-Email."
   action_activity_type:
     upvote:
-      other: upvote
+      other: positiv bewerten
     upvoted:
-      other: upvoted
+      other: positiv bewertet
     downvote:
-      other: downvote
+      other: negativ bewerten
     downvoted:
-      other: downvoted
+      other: negativ bewertet
     accept:
-      other: accept
+      other: akzeptieren
     accepted:
-      other: accepted
+      other: akzeptiert
 # The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
@@ -703,7 +703,7 @@ ui:
   edit_tag:
     title: Tag bearbeiten
     default_reason: Tag bearbeiten
-    default_first_reason: Add tag
+    default_first_reason: Schlagwort hinzufügen
     form:
       fields:
         revision:
@@ -745,11 +745,11 @@ ui:
       Verwende Kommentare, um nach weiteren Informationen zu fragen oder Verbesserungen vorzuschlagen. Vermeide es, Fragen in Kommentaren zu beantworten.
     tip_answer: >-
       Verwende Stellungsnahmen, um anderen Nutzern zu antworten oder sie über Änderungen zu informieren. Wenn du neue Informationen hinzufügst, bearbeite deinen Beitrag, anstatt zu kommentieren.
-    tip_vote: It adds something useful to the post
+    tip_vote: Es fügt dem Beitrag etwas Nützliches hinzu
   edit_answer:
     title: Antwort bearbeiten
     default_reason: Antwort bearbeiten
-    default_first_reason: Add answer
+    default_first_reason: Antwort hinzufügen
     form:
       fields:
         revision:
@@ -780,7 +780,7 @@ ui:
     title: Frage hinzufügen
     edit_title: Frage bearbeiten
     default_reason: Frage bearbeiten
-    default_first_reason: Add question
+    default_first_reason: Frage hinzufügen
     similar_questions: Ähnliche Fragen
     form:
       fields:
@@ -810,7 +810,7 @@ ui:
             Erkläre kurz deine Änderungen (korrigierte Rechtschreibung, korrigierte Grammatik, verbesserte Formatierung)
     btn_post_question: Poste deine Frage
     btn_save_edits: Änderungen speichern
-    answer_question: Answer your own question
+    answer_question: Eigene Frage beantworten
     post_question&answer: Poste deine Frage und Antwort
   tag_selector:
     add_btn: Schlagwort hinzufügen
@@ -835,7 +835,7 @@ ui:
       placeholder: Suchen
   footer:
     build_on: >-
-      Built on <1> Answer </1>- the open-source software that powers Q&A communities.<br />Made with love © {{cc}}.
+      Mit <1> Answer </1> gebaut, der open-source Software, die Q&A Communities unterstützt.<br />Mit Liebe gemacht © {{cc}}.
   upload_img:
     name: Ändern
     loading: wird geladen...
@@ -870,14 +870,14 @@ ui:
         range: Name mit bis zu 30 Zeichen.
         character: 'Muss den Zeichensatz "a-z", "0-9", " - . _" verwenden'
     email:
-      label: Email
+      label: E-Mail
       msg:
         empty: E-Mail-Feld darf nicht leer sein.
     password:
       label: Passwort
       msg:
         empty: Passwort-Feld darf nicht leer sein.
-        different: The passwords entered on both sides are inconsistent
+        different: Die beiden eingegebenen Passwörter stimmen nicht überein
   account_forgot:
     page_title: Dein Passwort vergessen
     btn_name: Schicke mir eine E-Mail zur Wiederherstellung
@@ -1012,7 +1012,7 @@ ui:
       modal_confirm_btn: Entfernen
       remove_success: Erfolgreich entfernt
   toast:
-    update: update success
+    update: Aktualisierung erfolgreich
     update_password: Das Kennwort wurde erfolgreich geändert.
     flag_success: Danke fürs Markieren.
     forbidden_operate_self: Verboten, an sich selbst zu operieren
@@ -1469,7 +1469,7 @@ ui:
         text: Don’t check this if you wish to only delete the user’s account.
       suspend_user:
         title: Suspend this user
-        content: A suspended user can't log in.
+        content: Ein gesperrter Benutzer kann sich nicht einloggen.
     questions:
       page_title: Fragen
       normal: Normal
