@@ -266,6 +266,8 @@ backend:
         other: Du kannst deine Rolle nicht ändern.
       not_allowed_registration:
         other: Derzeit ist die Seite nicht für die Anmeldung geöffnet.
+      not_allowed_login_via_password:
+        other: Currently the site is not allowed to login via password.
       access_denied:
         other: Zugriff verweigert
       page_access_denied:
@@ -519,6 +521,7 @@ ui:
     http_404: HTTP-Fehler 404
     http_50X: HTTP-Fehler 500
     http_403: HTTP Fehler 403
+    logout: Log Out
   notifications:
     title: Benachrichtigungen
     inbox: Posteingang
@@ -731,6 +734,8 @@ ui:
     x_hours_ago: "vor {{count}}h"
     hour: stunde
     day: tag
+    hours: hours
+    days: days
   comment:
     btn_add_comment: Einen Kommentar hinzufügen
     reply_to: Antwort an
@@ -835,7 +840,7 @@ ui:
       placeholder: Suchen
   footer:
     build_on: >-
-      Mit <1> Answer </1> gebaut, der open-source Software, die Q&A Communities unterstützt.<br />Mit Liebe gemacht © {{cc}}.
+      Powered by <1> Apache Answer </1>- the open-source software that powers Q&A communities.<br />Made with love © {{cc}}.
   upload_img:
     name: Ändern
     loading: wird geladen...
@@ -1054,6 +1059,7 @@ ui:
       btn_accepted: Akzeptiert
     write_answer:
       title: Deine Antwort
+      edit_answer: Edit my existing answer
       btn_name: Poste deine Antwort
       add_another_answer: Weitere Antwort hinzufügen
       confirm_title: Antworten fortsetzen
@@ -1355,23 +1361,33 @@ ui:
     dashboard:
       title: Dashboard
       welcome: Willkommen beim Answer-Admin!
-      site_statistics: Site-Statistiken
+      site_statistics: Site statistics
       questions: "Fragen:"
       answers: "Antworten:"
       comments: "Kommentare:"
       votes: "Stimmen:"
-      active_users: "Aktive Benutzer:"
+      users: "Users:"
       flags: "Meldungen:"
-      site_health_status: Website-Gesundheitsstatus
+      site_health_status: Site health status
       version: "Version:"
       https: "HTTPS:"
-      uploading_files: "Dateien hochladen:"
+      upload_folder: "Upload folder:"
+      run_mode: "Running mode:"
+      private: Private
+      public: Public
       smtp: "SMTP:"
       timezone: "Zeitzone:"
-      system_info: Systeminformationen
+      system_info: System info
+      go_version: "Go version:"
+      database: "Database:"
+      database_size: "Database size:"
       storage_used: "Verwendeter Speicher:"
       uptime: "Betriebszeit:"
-      answer_links: Antwortlinks
+      answer_links: Answer links
+      plugins: Plugins
+      github: GitHub
+      blog: Blog
+      contact: Contact
       documents: Dokumentation
       feedback: Rückmeldung
       support: Unterstützung
@@ -1386,6 +1402,8 @@ ui:
       allowed: Erlaubt
       enabled: Ermöglicht
       disabled: Behinderte
+      writable: Writable
+      not_writable: Not writable
     flags:
       title: Meldungen
       pending: Ausstehend
@@ -1596,6 +1614,10 @@ ui:
         text: "Du kannst hier Inhalte zur Datenschutzerklärung hinzufügen. Wenn du bereits ein Dokument hast, das anderswo gehostet wird, gib hier die vollständige URL an."
     write:
       page_title: Schreiben
+      restrict_answer:
+        title: Restrict answer
+        label: Each user can only write one answer for each question
+        text: "They can use the edit link to refine and improve their existing answer, instead."
       recommend_tags:
         label: Empfohlene Tags
         text: "Bitte gib den Tag-Slug oben ein, ein Tag pro Zeile."
@@ -1662,6 +1684,10 @@ ui:
         title: Privatgelände
         label: Anmeldung erforderlich
         text: Nur angemeldete Benutzer können auf diese Community zugreifen.
+      password_login:
+        title: Password login
+        label: Allow email and password login
+        text: "WARNING: If turn off, you may be unable to log in if you have not previously configured other login method."
     installed_plugins:
       title: Installierte Plugins
       plugin_link: Plugins erweitern und ergänzen die Funktionalität von Answer. Du kannst Plugins im <1>Answer Plugin Repository</1> finden.
