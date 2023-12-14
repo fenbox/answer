@@ -266,6 +266,8 @@ backend:
         other: Nie możesz zmienić swojej roli.
       not_allowed_registration:
         other: Currently the site is not open for registration.
+      not_allowed_login_via_password:
+        other: Currently the site is not allowed to login via password.
       access_denied:
         other: Odmowa dostępu.
       page_access_denied:
@@ -519,6 +521,7 @@ ui:
     http_404: Błąd HTTP 404
     http_50X: Błąd HTTP 500
     http_403: Błąd HTTP 403
+    logout: Log Out
   notifications:
     title: Powiadomienia
     inbox: Skrzynka odbiorcza
@@ -731,6 +734,8 @@ ui:
     x_hours_ago: "{{count}} h temu"
     hour: godzina
     day: dzień
+    hours: hours
+    days: days
   comment:
     btn_add_comment: Dodaj komentarz
     reply_to: Odpowiedź na
@@ -835,7 +840,7 @@ ui:
       placeholder: Szukaj
   footer:
     build_on: >-
-      Zbudowane na platformie <1>Answer</1> - oprogramowaniu open-source, które napędza społeczności pytań i odpowiedzi.<br />Stworzone z miłością © {{cc}}.
+      Powered by <1> Apache Answer </1>- the open-source software that powers Q&A communities.<br />Made with love © {{cc}}.
   upload_img:
     name: Zmień
     loading: Wczytywanie...
@@ -1054,6 +1059,7 @@ ui:
       btn_accepted: Zaakceptowane
     write_answer:
       title: Twoja odpowiedź
+      edit_answer: Edit my existing answer
       btn_name: Wyślij swoją odpowiedź
       add_another_answer: Dodaj kolejną odpowiedź
       confirm_title: Kontynuuj odpowiedź
@@ -1355,23 +1361,33 @@ ui:
     dashboard:
       title: Panel
       welcome: Witamy w Answer Admin!
-      site_statistics: Statystyki strony
+      site_statistics: Site statistics
       questions: "Pytania:"
       answers: "Odpowiedzi:"
       comments: "Komentarze:"
       votes: "Głosy:"
-      active_users: "Aktywni użytkownicy:"
+      users: "Users:"
       flags: "Flagi:"
-      site_health_status: Stan zdrowia strony
+      site_health_status: Site health status
       version: "Wersja:"
       https: "HTTPS:"
-      uploading_files: "Przesyłanie plików:"
+      upload_folder: "Upload folder:"
+      run_mode: "Running mode:"
+      private: Private
+      public: Public
       smtp: "SMTP:"
       timezone: "Strefa czasowa:"
-      system_info: Informacje o systemie
+      system_info: System info
+      go_version: "Go version:"
+      database: "Database:"
+      database_size: "Database size:"
       storage_used: "Wykorzystane miejsce:"
       uptime: "Czas pracy:"
-      answer_links: Linki do odpowiedzi
+      answer_links: Answer links
+      plugins: Plugins
+      github: GitHub
+      blog: Blog
+      contact: Contact
       documents: Dokumenty
       feedback: Opinie
       support: Wsparcie
@@ -1386,6 +1402,8 @@ ui:
       allowed: Dozwolone
       enabled: Włączone
       disabled: Wyłączone
+      writable: Writable
+      not_writable: Not writable
     flags:
       title: Flagi
       pending: Oczekujące
@@ -1596,6 +1614,10 @@ ui:
         text: "Możesz tutaj dodać treść polityki prywatności. Jeśli masz dokument hostowany gdzie indziej, podaj tutaj pełny URL."
     write:
       page_title: Pisanie
+      restrict_answer:
+        title: Restrict answer
+        label: Each user can only write one answer for each question
+        text: "They can use the edit link to refine and improve their existing answer, instead."
       recommend_tags:
         label: Recommend tags
         text: "Proszę wpisać tutaj tag slug, jeden tag na linię."
@@ -1662,6 +1684,10 @@ ui:
         title: Prywatne
         label: Wymagane logowanie
         text: Dostęp do tej społeczności mają tylko zalogowani użytkownicy.
+      password_login:
+        title: Password login
+        label: Allow email and password login
+        text: "WARNING: If turn off, you may be unable to log in if you have not previously configured other login method."
     installed_plugins:
       title: Zainstalowane wtyczki
       plugin_link: Plugins extend and expand the functionality of Answer. You may find plugins in the <1>Answer Plugin Repository</1>.
