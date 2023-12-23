@@ -268,7 +268,7 @@ backend:
       not_allowed_registration:
         other: 目前该站点未开放注册。
       not_allowed_login_via_password:
-        other: Currently the site is not allowed to login via password.
+        other: 该网站暂不支持密码登录。
       access_denied:
         other: 拒绝访问
       page_access_denied:
@@ -522,7 +522,7 @@ ui:
     http_404: HTTP 错误 404
     http_50X: HTTP 错误 500
     http_403: HTTP 错误 403
-    logout: Log Out
+    logout: 注销
   notifications:
     title: 通知
     inbox: 收件箱
@@ -707,7 +707,7 @@ ui:
   edit_tag:
     title: 编辑标签
     default_reason: 编辑标签
-    default_first_reason: Add tag
+    default_first_reason: 添加标签
     form:
       fields:
         revision:
@@ -735,8 +735,8 @@ ui:
     x_hours_ago: "{{count}} 小时前"
     hour: 小时
     day: 天
-    hours: hours
-    days: days
+    hours: 小时
+    days: 日
   comment:
     btn_add_comment: 添加评论
     reply_to: 回复
@@ -755,7 +755,7 @@ ui:
   edit_answer:
     title: 编辑回答
     default_reason: 编辑回答
-    default_first_reason: Add answer
+    default_first_reason: 添加答案
     form:
       fields:
         revision:
@@ -786,7 +786,7 @@ ui:
     title: 提交新的问题
     edit_title: 编辑问题
     default_reason: 编辑问题
-    default_first_reason: Add question
+    default_first_reason: 添加问题
     similar_questions: 相似的问题
     form:
       fields:
@@ -1225,7 +1225,7 @@ ui:
     x_answers: 个回答
     x_questions: 个问题
   install:
-    title: Answer
+    title: 答案
     next: 下一步
     done: 完成
     config_yaml_error: 无法创建 config.yaml 文件。
@@ -1367,28 +1367,28 @@ ui:
       answers: "回答:"
       comments: "评论:"
       votes: "投票:"
-      users: "Users:"
+      users: "用户:"
       flags: "举报:"
       site_health_status: '健康状态:'
       version: "版本"
       https: "HTTPS:"
-      upload_folder: "Upload folder:"
-      run_mode: "Running mode:"
-      private: Private
-      public: Public
+      upload_folder: "上传文件夹："
+      run_mode: "运行模式："
+      private: 私有
+      public: 公开
       smtp: "SMTP:"
       timezone: "时区："
       system_info: 系统信息
-      go_version: "Go version:"
-      database: "Database:"
-      database_size: "Database size:"
+      go_version: "Go版本："
+      database: "数据库："
+      database_size: "数据库大小："
       storage_used: "已用存储空间："
       uptime: "运行时间："
       answer_links: 回答链接
-      plugins: Plugins
+      plugins: 插件
       github: GitHub
-      blog: Blog
-      contact: Contact
+      blog: 博客
+      contact: 联系
       documents: 文档
       feedback: 用户反馈
       support: 帮助
@@ -1403,8 +1403,8 @@ ui:
       allowed: 允许
       enabled: 已启用
       disabled: 停用
-      writable: Writable
-      not_writable: Not writable
+      writable: 可写
+      not_writable: 不可写
     flags:
       title: 举报
       pending: 等待处理
@@ -1686,9 +1686,9 @@ ui:
         label: 需要登录
         text: 只有登录用户才能访问这个社区。
       password_login:
-        title: Password login
-        label: Allow email and password login
-        text: "WARNING: If turn off, you may be unable to log in if you have not previously configured other login method."
+        title: 密码登录
+        label: 允许使用密码登录
+        text: "警告：如果您未配置过其他登录方式，关闭密码登录后您则可能无法登录。"
     installed_plugins:
       title: 已安装插件
       plugin_link: Answer 插件扩展功能。您可以在<1>Answer Plugin 仓库</1>中找到插件。
