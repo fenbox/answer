@@ -162,7 +162,7 @@ backend:
       not_found:
         other: Комментарий не найден.
       cannot_edit_after_deadline:
-        other: The comment time has been too long to modify.
+        other: Невозможно редактировать комментарий из-за того, что он был создан слишком давно.
     email:
       duplicate:
         other: Адрес электронной почты уже существует.
@@ -171,7 +171,7 @@ backend:
       verify_url_expired:
         other: Срок действия подтверждённого адреса электронной почты истек, пожалуйста, отправьте письмо повторно.
       illegal_email_domain_error:
-        other: Email is not allowed from that email domain. Please use another one.
+        other: Невозможно использовать email с этим доменом. Пожалуйста, используйте другой.
     lang:
       not_found:
         other: Языковой файл не найден.
@@ -231,12 +231,12 @@ backend:
       cannot_update:
         other: Нет прав для обновления.
       is_used_cannot_delete:
-        other: You cannot delete a tag that is in use.
+        other: Вы не можете удалить метку, которая используется.
       cannot_set_synonym_as_itself:
         other: Вы не можете установить синоним текущего тега.
     smtp:
       config_from_name_cannot_be_email:
-        other: The from name cannot be a email address.
+        other: Поле отправителя не может содержать email адрес.
     theme:
       not_found:
         other: Тема не найдена.
@@ -252,7 +252,7 @@ backend:
         other: Please set a login password for your account before you remove this login.
       email_or_password_wrong:
         other:
-          other: Email and password do not match.
+          other: Почта и пароль введены неправильно.
       not_found:
         other: Пользователь не найден.
       suspended:
@@ -266,9 +266,9 @@ backend:
       cannot_update_your_role:
         other: Вы не можете изменить свою роль.
       not_allowed_registration:
-        other: Currently the site is not open for registration.
+        other: В данный момент регистрация на сайте выключена.
       not_allowed_login_via_password:
-        other: Currently the site is not allowed to login via password.
+        other: В настоящее время вход на сайт по паролю отключен.
       access_denied:
         other: Доступ запрещен
       page_access_denied:
@@ -276,7 +276,7 @@ backend:
       add_bulk_users_format_error:
         other: "Error {{.Field}} format near '{{.Content}}' at line {{.Line}}. {{.ExtraMessage}}"
       add_bulk_users_amount_error:
-        other: "The number of users you add at once should be in the range of 1-{{.MaxAmount}}."
+        other: "Количество пользователей, которое Вы добавляете, должно быть в промежутке от 1 до {{.MaxAmount}}."
     config:
       read_config_failed:
         other: Не удалось прочитать конфигурацию
@@ -297,19 +297,19 @@ backend:
   reason:
     spam:
       name:
-        other: spam
+        other: спам
       desc:
-        other: This post is an advertisement, or vandalism. It is not useful or relevant to the current topic.
+        other: Этот пост является рекламой или содержит вандализм. Он не полезен или не релевантен для данной темы.
     rude_or_abusive:
       name:
-        other: rude or abusive
+        other: грубость или оскорбления
       desc:
-        other: A reasonable person would find this content inappropriate for respectful discourse.
+        other: Человек может посчитать такое содержимое неподходящим для уважительной беседы.
     a_duplicate:
       name:
-        other: a duplicate
+        other: дубликат
       desc:
-        other: This question has been asked before and already has an answer.
+        other: Этот вопрос уже был задан, и на него уже был получен ответ.
       placeholder:
         other: Enter the existing question link
     not_a_answer:
@@ -319,16 +319,16 @@ backend:
         other: This was posted as an answer, but it does not attempt to answer the question. It should possibly be an edit, a comment, another question, or deleted altogether.
     no_longer_needed:
       name:
-        other: no longer needed
+        other: больше не нужен
       desc:
-        other: This comment is outdated, conversational or not relevant to this post.
+        other: Этот комментарий устарел, носит разговорный характер или не имеет отношения к данному сообщению.
     something:
       name:
-        other: something else
+        other: прочее
       desc:
-        other: This post requires staff attention for another reason not listed above.
+        other: Этот пост требует внимания администрации по другой причине, не перечисленной выше.
       placeholder:
-        other: Let us know specifically what you are concerned about
+        other: Уточните, что именно Вас беспокоит
     community_specific:
       name:
         other: a community-specific reason
@@ -351,19 +351,19 @@ backend:
         other: Improve and correct problems with this post yourself.
     needs_close:
       name:
-        other: needs close
+        other: требует закрытия
       desc:
-        other: A closed question can't answer, but still can edit, vote and comment.
+        other: На закрытый вопрос нельзя ответить, но все равно можно редактировать, голосовать и комментировать.
     needs_delete:
       name:
-        other: needs delete
+        other: требует удаления
       desc:
-        other: This post will be deleted.
+        other: Этот пост будет удален.
   question:
     close:
       duplicate:
         name:
-          other: spam
+          other: спам
         desc:
           other: Этот вопрос был задан ранее и уже имеет ответ.
       guideline:
@@ -409,13 +409,13 @@ backend:
       mention_you:
         other: mentioned you
       your_question_is_closed:
-        other: Your question has been closed
+        other: Ваш вопрос был закрыт
       your_question_was_deleted:
-        other: Your question has been deleted
+        other: Ваш вопрос был удален
       your_answer_was_deleted:
-        other: Your answer has been deleted
+        other: Ваш ответ был удален
       your_comment_was_deleted:
-        other: Your comment has been deleted
+        other: Ваш комментарий был удален
       up_voted_question:
         other: upvoted question
       down_voted_question:
@@ -458,15 +458,15 @@ backend:
       title:
         other: "[{{.SiteName }}] Password reset"
       body:
-        other: "Somebody asked to reset your password on {{.SiteName}}.<br><br>\n\nIf it was not you, you can safely ignore this email.<br><br>\n\nClick the following link to choose a new password:<br>\n<a href='{{.PassResetUrl}}' target='_blank'>{{.PassResetUrl}}</a>\n"
+        other: "Кто-то сделал запрос на сброс пароля на {{.SiteName}}.<br><br>\n\nЕсли это были не Вы, можете проигнорировать это письмо.<br><br>\n\nНажмите на следующую ссылку, чтобы выбрать новый пароль:<br><a href='{{.PassResetUrl}}' target='_blank'>{{.PassResetUrl}}</a>\n"
     register:
       title:
-        other: "[{{.SiteName}}] Confirm your new account"
+        other: "[{{.SiteName}}] Подтвердите Ваш новый аккаунт"
       body:
         other: "Welcome to {{.SiteName}}!<br><br>\n\nClick the following link to confirm and activate your new account:<br>\n<a href='{{.RegisterUrl}}' target='_blank'>{{.RegisterUrl}}</a><br><br>\n\nIf the above link is not clickable, try copying and pasting it into the address bar of your web browser.\n"
     test:
       title:
-        other: "[{{.SiteName}}] Test Email"
+        other: "[{{.SiteName}}] Проверочное электронное письмо"
       body:
         other: "Это тестовое письмо."
   action_activity_type:
@@ -519,29 +519,29 @@ ui:
     maintenance: Обслуживание сайта
     users: Пользователи
     oauth_callback: Processing
-    http_404: HTTP Error 404
-    http_50X: HTTP Error 500
-    http_403: HTTP Error 403
-    logout: Log Out
+    http_404: Ошибка HTTP 404
+    http_50X: Ошибка HTTP 500
+    http_403: Ошибка HTTP 403
+    logout: Выйти
   notifications:
     title: Уведомления
     inbox: Входящие
     achievement: Достижения
-    new_alerts: New alerts
+    new_alerts: Новые оповещения
     all_read: Отметить всё как прочитанное
     show_more: Показать еще
-    someone: Someone
+    someone: Кто-то
     inbox_type:
-      all: All
-      posts: Posts
-      invites: Invites
+      all: Все
+      posts: Посты
+      invites: Приглашения
       votes: Votes
   suspended:
     title: Ваш аккаунт заблокирован
     until_time: "Ваша учетная запись была заблокирована до {{ time }}."
     forever: Этот пользователь был навсегда заблокирован.
     end: Вы не соответствуете правилам сообщества.
-    contact_us: Contact us
+    contact_us: Связаться с нами
   editor:
     blockquote:
       text: Цитата
@@ -567,10 +567,10 @@ ui:
             msg:
               empty: Код не может быть пустым.
           language:
-            label: Language
-            placeholder: Automatic detection
-      btn_cancel: Cancel
-      btn_confirm: Add
+            label: Язык
+            placeholder: Автоматический выбор
+      btn_cancel: Отменить
+      btn_confirm: Добавить
     formula:
       text: Formula
       options:
@@ -599,9 +599,9 @@ ui:
             label: Image file
             btn: Выбрать изображение
             msg:
-              empty: File cannot be empty.
-              only_image: Only image files are allowed.
-              max_size: File size cannot exceed 4MB.
+              empty: Файл не может быть пустым.
+              only_image: Разрешены только изображения.
+              max_size: Размер файла не может превышать 4МБ.
           desc:
             label: Описание
       tab_url: URL изображения
@@ -680,7 +680,7 @@ ui:
             range: URL slug до 35 символов.
             character: URL slug содержит недопустимый набор символов.
         desc:
-          label: Description
+          label: Описание
     btn_cancel: Отмена
     btn_submit: Отправить
     btn_post: Post new tag
@@ -702,18 +702,18 @@ ui:
         <p>We do not allowed <strong>deleting tag with posts</strong>.</p> <p>Please remove this tag from the posts first.</p>
       tip_with_synonyms: >-
         <p>We do not allowed <strong>deleting tag with synonyms</strong>.</p> <p>Please remove the synonyms from this tag first.</p>
-      tip: Are you sure you wish to delete?
+      tip: Вы уверены, что хотите удалить?
       close: Закрыть
   edit_tag:
     title: Изменить тег
     default_reason: Правка тега
-    default_first_reason: Add tag
+    default_first_reason: Добавить метку
     form:
       fields:
         revision:
           label: Редакция
         display_name:
-          label: Display name
+          label: Отобразить имя
         slug_name:
           label: URL slug
           info: 'Необходимо использовать набор символов "a-z", "0-9", "+ # - ."'
