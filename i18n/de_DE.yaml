@@ -75,13 +75,13 @@ backend:
   privilege:
     level_1:
       description:
-        other: Stufe 1 (weniger Ansehen erforderlich für privates Team, Gruppe)
+        other: Level 1 (less reputation required for private team, group)
     level_2:
       description:
-        other: Stufe 2 (geringes Ansehen für Startup-Community erforderlich)
+        other: Level 2 (low reputation required for startup community)
     level_3:
       description:
-        other: Stufe 3 (hohes Ansehen für reife Gemeinschaft erforderlich)
+        other: Level 3 (high reputation required for mature community)
     rank_question_add_label:
       other: Fragen stellen
     rank_answer_add_label:
@@ -202,7 +202,7 @@ backend:
       cannot_deleted:
         other: Keine Berechtigung zum Löschen.
       cannot_close:
-        other: Keine Erlaubnis zum Schließen.
+        other: Keine Berechtigung zum Schließen.
       cannot_update:
         other: Keine Berechtigung zum Aktualisieren.
     rank:
@@ -214,9 +214,9 @@ backend:
         other: Dafür brauchst du mindestens {{.Rank}} Ansehen.
     report:
       handle_failed:
-        other: Berichtshandle fehlgeschlagen.
+        other: Bearbeiten der Meldung fehlgeschlagen.
       not_found:
-        other: Report nicht gefunden.
+        other: Meldung nicht gefunden.
     tag:
       already_exist:
         other: Tag existiert bereits.
