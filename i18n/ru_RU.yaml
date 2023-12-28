@@ -716,7 +716,7 @@ ui:
           label: Отобразить имя
         slug_name:
           label: URL slug
-          info: 'Необходимо использовать набор символов "a-z", "0-9", "+ # - ."'
+          info: URL slug up to 35 characters.
         desc:
           label: Описание
         edit_summary:
