@@ -716,7 +716,7 @@ ui:
           label: نام
         slug_name:
           label: نامک نشانی اینترنتی
-          info: 'باید از حروف "a-z", "0-9", "+ # -" استفاده شود'
+          info: URL slug up to 35 characters.
         desc:
           label: توضیحات
         edit_summary:
