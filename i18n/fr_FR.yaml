@@ -31,7 +31,7 @@ backend:
     forbidden_error:
       other: Interdit.
     duplicate_request_error:
-      other: Duplicate submission.
+      other: Soumission en double.
   action:
     report:
       other: Flag
@@ -56,7 +56,7 @@ backend:
     invite_someone_to_answer:
       other: Modifier
     undelete:
-      other: Undelete
+      other: Annuler la suppression
   role:
     name:
       user:
@@ -83,27 +83,27 @@ backend:
       description:
         other: Level 3 (high reputation required for mature community)
     rank_question_add_label:
-      other: Ask question
+      other: Poser une question
     rank_answer_add_label:
       other: Écrire une réponse
     rank_comment_add_label:
       other: Ajouter un commentaire
     rank_report_add_label:
-      other: Flag
+      other: Signaler
     rank_comment_vote_up_label:
-      other: Upvote comment
+      other: Voter favorablement le commentaire
     rank_link_url_limit_label:
-      other: Post more than 2 links at a time
+      other: Poster plus de 2 liens à la fois
     rank_question_vote_up_label:
-      other: Upvote question
+      other: Voter favorablement la question
     rank_answer_vote_up_label:
-      other: Upvote answer
+      other: Voter favorablement la réponse
     rank_question_vote_down_label:
-      other: Downvote question
+      other: Voter contre la question
     rank_answer_vote_down_label:
-      other: Downvote answer
+      other: Voter contre la réponse
     rank_invite_someone_to_answer_label:
-      other: Invite someone to answer
+      other: Inviter quelqu'un à répondre
     rank_tag_add_label:
       other: Créer une nouvelle étiquette
     rank_tag_edit_label:
@@ -117,15 +117,15 @@ backend:
     rank_answer_edit_without_review_label:
       other: Edit other's answer without review
     rank_question_audit_label:
-      other: Review question edits
+      other: Vérifier la question
     rank_answer_audit_label:
-      other: Review answer edits
+      other: Revoir les modifications de la réponse
     rank_tag_audit_label:
-      other: Review tag edits
+      other: Évaluer les modifications des tags
     rank_tag_edit_without_review_label:
-      other: Edit tag description without review
+      other: Modifier la description du tag sans le relire
     rank_tag_synonym_label:
-      other: Manage tag synonyms
+      other: Gérer les tags synonyme
   email:
     other: Email
   e_mail:
@@ -171,7 +171,7 @@ backend:
       verify_url_expired:
         other: L'URL de vérification de l'email a expiré, veuillez renvoyer l'email.
       illegal_email_domain_error:
-        other: Email is not allowed from that email domain. Please use another one.
+        other: L'e-mail n'est pas autorisé à partir de ce domaine de messagerie. Veuillez en utiliser un autre.
     lang:
       not_found:
         other: Fichier de langue non trouvé.
@@ -211,7 +211,7 @@ backend:
       vote_fail_to_meet_the_condition:
         other: Thanks for the feedback. You need at least {{.Rank}} reputation to cast a vote.
       no_enough_rank_to_operate:
-        other: You need at least {{.Rank}} reputation to do this.
+        other: Vous avez besoin d'au moins {{.Rank}} de réputation pour faire cela.
     report:
       handle_failed:
         other: La gestion du rapport a échoué.
@@ -223,7 +223,7 @@ backend:
       not_found:
         other: Tag non trouvé.
       recommend_tag_not_found:
-        other: Recommend tag is not exist.
+        other: Le tag Recommandé n'existe pas.
       recommend_tag_enter:
         other: Veuillez saisir au moins un tag.
       not_contain_synonym_tags:
@@ -231,12 +231,12 @@ backend:
       cannot_update:
         other: Pas de permission pour mettre à jour.
       is_used_cannot_delete:
-        other: You cannot delete a tag that is in use.
+        other: Vous ne pouvez pas supprimer un tag utilisé.
       cannot_set_synonym_as_itself:
         other: Vous ne pouvez pas définir le synonyme de la balise actuelle comme elle-même.
     smtp:
       config_from_name_cannot_be_email:
-        other: The from name cannot be a email address.
+        other: Le nom d'expéditeur ne peut pas être une adresse e-mail.
     theme:
       not_found:
         other: Thème non trouvé.
@@ -247,9 +247,9 @@ backend:
         other: No permission to revise.
     user:
       external_login_missing_user_id:
-        other: The third-party platform does not provide a unique UserID, so you cannot login, please contact the website administrator.
+        other: La plateforme tierce ne fournit pas un identifiant d'utilisateur unique, vous ne pouvez donc pas vous connecter, veuillez contacter l'administrateur du site.
       external_login_unbinding_forbidden:
-        other: Please set a login password for your account before you remove this login.
+        other: Veuillez définir un mot de passe de connexion pour votre compte avant de supprimer ce login.
       email_or_password_wrong:
         other:
           other: L'email et le mot de passe ne correspondent pas.
@@ -266,13 +266,13 @@ backend:
       cannot_update_your_role:
         other: Vous ne pouvez pas modifier votre rôle.
       not_allowed_registration:
-        other: Currently the site is not open for registration.
+        other: Actuellement, le site n'est pas ouvert aux inscriptions.
       not_allowed_login_via_password:
-        other: Currently the site is not allowed to login via password.
+        other: Actuellement le site n'est pas autorisé à se connecter par mot de passe.
       access_denied:
         other: Accès refusé
       page_access_denied:
-        other: You do not have access to this page.
+        other: Vous n'avez pas accès à cette page.
       add_bulk_users_format_error:
         other: "Error {{.Field}} format near '{{.Content}}' at line {{.Line}}. {{.ExtraMessage}}"
       add_bulk_users_amount_error:
@@ -716,7 +716,7 @@ ui:
           label: Display name
         slug_name:
           label: URL slug
-          info: 'Doit utiliser le jeu de caractères "a-z", "0-9", "+ # - ."'
+          info: URL slug up to 35 characters.
         desc:
           label: Description
         edit_summary:
