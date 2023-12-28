@@ -716,7 +716,7 @@ ui:
           label: Anzeigename
         slug_name:
           label: URL-Slug
-          info: 'Muss den Zeichensatz "a-z", "0-9", "+ # - ." verwenden'
+          info: URL slug up to 35 characters.
         desc:
           label: Beschreibung
         edit_summary:
