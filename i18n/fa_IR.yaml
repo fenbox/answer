@@ -601,7 +601,7 @@ ui:
             msg:
               empty: فایل نمی تواند خالی باشد.
               only_image: فقط فایل های تصویری مجاز هستند.
-              max_size: حجم فایل نمی تواند بیشتر از ۴ مگابایت باشد.
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: توضیحات
       tab_url: لینک عکس
