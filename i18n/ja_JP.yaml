@@ -601,7 +601,7 @@ ui:
             msg:
               empty: ファイルは空にできません。
               only_image: 画像ファイルのみが許可されています。
-              max_size: ファイルサイズは4MBを超えることはできません。
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: 説明
       tab_url: 画像URL
