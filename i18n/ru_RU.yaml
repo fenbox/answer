@@ -601,7 +601,7 @@ ui:
             msg:
               empty: Файл не может быть пустым.
               only_image: Разрешены только изображения.
-              max_size: Размер файла не может превышать 4МБ.
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: Описание
       tab_url: URL изображения
@@ -716,7 +716,7 @@ ui:
           label: Отобразить имя
         slug_name:
           label: URL slug
-          info: URL slug up to 35 characters.
+          info: 'Необходимо использовать набор символов "a-z", "0-9", "+ # - ."'
         desc:
           label: Описание
         edit_summary:
