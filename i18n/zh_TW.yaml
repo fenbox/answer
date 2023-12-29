@@ -601,7 +601,7 @@ ui:
             msg:
               empty: 文件不能為空。
               only_image: 只能上傳圖片文件。
-              max_size: 文件大小不能超過4MB
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: 圖片描述
       tab_url: 圖片地址
