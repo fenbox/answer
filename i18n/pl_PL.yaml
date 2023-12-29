@@ -601,7 +601,7 @@ ui:
             msg:
               empty: Plik nie może być pusty.
               only_image: Dozwolone są tylko pliki obrazków.
-              max_size: Rozmiar pliku nie może przekraczać 4 MB.
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: Opis
       tab_url: Adres URL obrazka
