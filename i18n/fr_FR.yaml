@@ -601,7 +601,7 @@ ui:
             msg:
               empty: Le fichier ne doit pas être vide.
               only_image: Seules les images sont autorisées.
-              max_size: La taille du fichier ne doit pas dépasser 4 Mo.
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: Description
       tab_url: URL de l'image
