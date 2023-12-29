@@ -601,7 +601,7 @@ ui:
             msg:
               empty: Arquivo não pode ser vazio.
               only_image: Somente um arquivo de imagem é permitido.
-              max_size: O tamanho do arquivo não pode exceder 4MB.
+              max_size: O tamanho do arquivo não pode exceder 4 MB.
           desc:
             label: Descrição (opcional)
       tab_url: URL da imagem
@@ -716,7 +716,7 @@ ui:
           label: Nome de exibição
         slug_name:
           label: Slug de URL
-          info: URL slug up to 35 characters.
+          info: 'Deve usar o conjunto de caracteres "a-z", "0-9", "+ # - ."'
         desc:
           label: Descrição
         edit_summary:
