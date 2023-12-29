@@ -601,7 +601,7 @@ ui:
             msg:
               empty: File tidak boleh kosong.
               only_image: Hanya file Gambar yang diperbolehkan.
-              max_size: Ukuran file tidak boleh melebihi 4MB.
+              max_size: Ukuran file tidak boleh melebihi 4 MB.
           desc:
             label: Description
       tab_url: URL gambar
@@ -716,7 +716,7 @@ ui:
           label: Display name
         slug_name:
           label: URL slug
-          info: URL slug up to 35 characters.
+          info: 'Harus menggunakan set karakter "a-z", "0-9", "+ # - ."'
         desc:
           label: Deskripsi
         edit_summary:
