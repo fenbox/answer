@@ -601,7 +601,7 @@ ui:
             msg:
               empty: Názov súboru nemôže byť prázdny.
               only_image: Povolené sú iba obrázkové súbory.
-              max_size: File size cannot exceed 4MB.
+              max_size: File size cannot exceed 4 MB.
           desc:
             label: Popis
       tab_url: URL obrázka
@@ -716,7 +716,7 @@ ui:
           label: Display name
         slug_name:
           label: URL slug
-          info: URL slug up to 35 characters.
+          info: 'Musíte použiť znakovú sadu "a-z", "0-9", "+ # - ."'
         desc:
           label: Opis
         edit_summary:
