@@ -1019,10 +1019,10 @@ ui:
       remove_success: 移除成功
   toast:
     update: 更新成功
-    update_password: 更改密码成功。
-    flag_success: 感谢您的标记，我们会尽快处理。
-    forbidden_operate_self: 禁止自己操作
-    review: 您的修订将在审核通过后显示。
+    update_password: 密码更新成功。
+    flag_success: 感谢标记。
+    forbidden_operate_self: 禁止对自己执行操作
+    review: 您的修订将在审阅通过后显示。
     sent_success: 发送成功
   related_question:
     title: 相关问题
@@ -1038,18 +1038,18 @@ ui:
     Asked: 提问于
     asked: 提问于
     update: 修改于
-    edit: 最后编辑于
+    edit: 编辑于
     Views: 阅读次数
     Follow: 关注此问题
     Following: 已关注
     follow_tip: 关注此问题以接收通知
     answered: 回答于
     closed_in: 关闭于
-    show_exist: 查看相关问题。
+    show_exist: 查看类似问题。
     useful: 有用的
     question_useful: 它是有用和明确的
     question_un_useful: 它不明确或没用的
-    question_bookmark: 将此问题加入收藏
+    question_bookmark: 收藏该问题
     answer_useful: 这是有用的
     answer_un_useful: 它是没有用的
     answers:
@@ -1066,11 +1066,11 @@ ui:
       confirm_title: 继续回答
       continue: 继续
       confirm_info: >-
-        <p>您确定要提交一个新的回答吗？</p><p>您可以直接编辑和改善您之前的回答的。</p>
+        <p>你确定要提交一个新的回答吗？</p><p>作为替代，你可以通过编辑来完善和改进之前的回答。</p>
       empty: 回答内容不能为空。
-      characters: 内容长度至少 6 个字符
+      characters: 内容长度至少 6 个字符。
       tips:
-        header_1: 感谢你的回答.
+        header_1: 感谢你的回答
         li1_1: 请务必 <strong>回答问题</strong>。提供详细信息并分享您的研究。
         li1_2: 用参考资料或个人经历来支持你所做的任何陈述。
         header_2: 但是 <strong>请避免</strong>...
@@ -1080,7 +1080,7 @@ ui:
       title: 重新打开这个帖子
       content: 确定要重新打开吗？
     pin:
-      title: 置顶此条帖子
+      title: 置顶该帖子
       content: 你确定要全局置顶吗？这个帖子将出现在所有帖子列表的顶部。
       confirm_btn: 置顶
   delete:
