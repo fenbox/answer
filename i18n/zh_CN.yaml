@@ -1071,7 +1071,7 @@ ui:
       characters: 内容长度至少 6 个字符。
       tips:
         header_1: 感谢你的回答
-        li1_1: 请务必 <strong>回答问题</strong>。提供详细信息并分享您的研究。
+        li1_1: 请务必确定在 <strong>回答问题</strong>。提供详细信息并分享你的研究。
         li1_2: 用参考资料或个人经历来支持你所做的任何陈述。
         header_2: 但是 <strong>请避免</strong>...
         li2_1: 请求帮助，寻求澄清，或答复其他答案。
@@ -1086,13 +1086,13 @@ ui:
   delete:
     title: 删除
     question: >-
-      我们不建议<strong>删除有回答的帖子</strong>。因为这样做会使得后来的读者无法从该问题中获得帮助。</p><p>如果删除过多有回答的帖子，你的账号将会被禁止提问。你确定要删除吗？
+      我们不建议 <strong>删除有回答的帖子</strong>。因为这样做会使得后来的读者无法从该帖子中获得帮助。</p><p>如果删除过多有回答的帖子，你的账号将会被禁止提问。你确定要删除吗？
     answer_accepted: >-
-      <p>我们不建议<strong>删除被采纳的回答</strong>。因为这样做会使得后来的读者无法从该回答中获得帮助。</p>如果删除过多被采纳的回答，你的账号将会被禁止回答任何提问。你确定要删除吗？
+      <p>我们不建议<strong>删除被采纳的回答</strong>。因为这样做会使得后来的读者无法从该帖子中获得帮助。</p>如果删除过多被采纳的回答，你的账号将会被禁止回答任何提问。你确定要删除吗？
     other: 你确定要删除？
-    tip_answer_deleted: 此回答已被删除
-    undelete_title: 恢复本帖
-    undelete_desc: 你确定你要恢复吗？
+    tip_answer_deleted: 该回答已被删除
+    undelete_title: 撤销删除本帖
+    undelete_desc: 你确定你要撤销删除吗？
   btns:
     confirm: 确认
     cancel: 取消
@@ -1102,12 +1102,12 @@ ui:
     undelete: 撤消删除
     login: 登录
     signup: 注册
-    logout: 退出登录
+    logout: 退出
     verify: 验证
     add_question: 我要提问
     approve: 批准
     reject: 拒绝
-    skip: 略过
+    skip: 跳过
     discard_draft: 丢弃草稿
     pinned: 已置顶
     all: 全部
@@ -1424,7 +1424,7 @@ ui:
         fields:
           password:
             label: 密码
-            text: 用户将被注销，需要再次登录。
+            text: 用户将被退出，需要再次登录。
             msg: 密码的长度必须是8-32个字符。
       btn_cancel: 取消
       btn_submit: 提交
