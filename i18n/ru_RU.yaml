@@ -628,25 +628,25 @@ ui:
       form:
         fields:
           url:
-            label: URL
+            label: URL-адрес
             msg:
               empty: URL не может быть пустым.
           name:
             label: Описание
-      btn_cancel: Cancel
-      btn_confirm: Add
+      btn_cancel: Отменить
+      btn_confirm: Добавить
     ordered_list:
       text: Numbered list
     unordered_list:
       text: Bulleted list
     table:
-      text: Table
+      text: Таблица
       heading: Heading
       cell: Cell
   close_modal:
     title: I am closing this post as...
-    btn_cancel: Cancel
-    btn_submit: Submit
+    btn_cancel: Отменить
+    btn_submit: Отправить
     remark:
       empty: Не может быть пустым.
     msg:
@@ -729,7 +729,7 @@ ui:
     long_date: MMM D
     long_date_with_year: "MMM D, YYYY"
     long_date_with_time: "MMM D, YYYY [at] HH:mm"
-    now: now
+    now: сейчас
     x_seconds_ago: "{{count}}s ago"
     x_minutes_ago: "{{count}}m ago"
     x_hours_ago: "{{count}}h ago"
@@ -745,7 +745,7 @@ ui:
     btn_delete: Удалить
     btn_flag: Flag
     btn_save_edits: Save edits
-    btn_cancel: Cancel
+    btn_cancel: Отменить
     show_more: Показать больше комментариев
     tip_question: >-
       Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.
@@ -847,9 +847,9 @@ ui:
     loading: загрузка...
   pic_auth_code:
     title: Captcha
-    placeholder: Type the text above
+    placeholder: Введите текст выше
     msg:
-      empty: Captcha cannot be empty.
+      empty: Капча не может быть пустой.
   inactive:
     first: >-
       You're almost done! We sent an activation mail to <bold>{{mail}}</bold>. Please follow the instructions in the mail to activate your account.
@@ -909,16 +909,16 @@ ui:
     subtitle: Add a recovery email to your account.
     btn_update: Update email address
     email:
-      label: Email
+      label: Электронная почта
       msg:
-        empty: Email cannot be empty.
-    modal_title: Email already existes.
+        empty: Адрес электронной почты не может быть пустым.
+    modal_title: Электронная почта уже существует.
     modal_content: This email address already registered. Are you sure you want to connect to the existing account?
-    modal_cancel: Change email
+    modal_cancel: Изменить адрес электронной почты
     modal_confirm: Connect to the existing account
   password_reset:
-    page_title: Password Reset
-    btn_name: Reset my password
+    page_title: Сброс пароля
+    btn_name: Сбросить мой пароль
     reset_success: >-
       You successfully changed your password; you will be redirected to the log in page.
     link_invalid: >-
@@ -933,12 +933,12 @@ ui:
     password_confirm:
       label: Confirm new password
   settings:
-    page_title: Settings
+    page_title: Настройки
     goto_modify: Go to modify
     nav:
-      profile: Profile
-      notification: Notifications
-      account: Account
+      profile: Профиль
+      notification: Уведомления
+      account: Аккаунт
       interface: Interface
     profile:
       heading: Профиль
