@@ -299,12 +299,12 @@ backend:
       name:
         other: spam
       desc:
-        other: This post is an advertisement, or vandalism. It is not useful or relevant to the current topic.
+        other: Ce message est une publicité ou un vandalisme. Il n'est pas utile ou pertinent pour le sujet actuel.
     rude_or_abusive:
       name:
         other: grossier ou abusif
       desc:
-        other: A reasonable person would find this content inappropriate for respectful discourse.
+        other: Une personne raisonnable trouverait ce contenu inapproprié pour un discours respectueux.
     a_duplicate:
       name:
         other: un doublon
