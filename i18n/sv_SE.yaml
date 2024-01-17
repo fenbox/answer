@@ -60,7 +60,7 @@ backend:
   role:
     name:
       user:
-        other: User
+        other: Användare
       admin:
         other: Admin
       moderator:
@@ -131,9 +131,9 @@ backend:
   e_mail:
     other: Email
   password:
-    other: Password
+    other: Lösenord
   pass:
-    other: Password
+    other: Lösenord
   email_or_password_wrong_error:
     other: Email and password do not match.
   error:
@@ -431,7 +431,7 @@ backend:
   email_tpl:
     change_email:
       title:
-        other: "[{{.SiteName}}] Confirm your new email address"
+        other: "[{{.SiteName}}] Bekräfta din nya e-postadress"
       body:
         other: "Confirm your new email address for {{.SiteName}} by clicking on the following link:<br>\n<a href='{{.ChangeEmailUrl}}' target='_blank'>{{.ChangeEmailUrl}}</a><br><br>\n\nIf you did not request this change, please ignore this email.\n"
     new_answer:
@@ -490,10 +490,10 @@ ui:
       <ul class="mb-0"><li><p class="mb-2">to make links</p><pre class="mb-2"><code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com)</code></pre></li><li><p class="mb-2">put returns between paragraphs</p></li><li><p class="mb-2"><em>_italic_</em> or **<strong>bold</strong>**</p></li><li><p class="mb-2">indent code by 4 spaces</p></li><li><p class="mb-2">quote by placing <code>&gt;</code> at start of line</p></li><li><p class="mb-2">backtick escapes <code>`like _this_`</code></p></li><li><p class="mb-2">create code fences with backticks <code>`</code></p><pre class="mb-0"><code>```<br/>code here<br/>```</code></pre></li></ul>
   pagination:
     prev: Prev
-    next: Next
+    next: Nästa
   page_title:
-    question: Question
-    questions: Questions
+    question: Fråga
+    questions: Frågor
     tag: Tag
     tags: Tags
     tag_wiki: tag wiki
@@ -502,12 +502,12 @@ ui:
     ask_a_question: Add Question
     edit_question: Edit Question
     edit_answer: Edit Answer
-    search: Search
+    search: Sök
     posts_containing: Posts containing
-    settings: Settings
+    settings: Inställningar
     notifications: Notifications
-    login: Log In
-    sign_up: Sign Up
+    login: Logga in
+    sign_up: Registrera dig
     account_recovery: Account Recovery
     account_activation: Account Activation
     confirm_email: Confirm Email
@@ -517,19 +517,19 @@ ui:
     install: Answer Installation
     upgrade: Answer Upgrade
     maintenance: Website Maintenance
-    users: Users
+    users: Användare
     oauth_callback: Processing
     http_404: HTTP Error 404
     http_50X: HTTP Error 500
     http_403: HTTP Error 403
-    logout: Log Out
+    logout: Logga ut
   notifications:
     title: Notifications
-    inbox: Inbox
+    inbox: Inkorg
     achievement: Achievements
     new_alerts: New alerts
-    all_read: Mark all as read
-    show_more: Show more
+    all_read: Markera alla som lästa
+    show_more: Visa mer
     someone: Someone
     inbox_type:
       all: All
@@ -541,7 +541,7 @@ ui:
     until_time: "Your account was suspended until {{ time }}."
     forever: This user was suspended forever.
     end: You don't meet a community guideline.
-    contact_us: Contact us
+    contact_us: Kontakta oss
   editor:
     blockquote:
       text: Blockquote
@@ -567,10 +567,10 @@ ui:
             msg:
               empty: Code cannot be empty.
           language:
-            label: Language
+            label: Språk
             placeholder: Automatic detection
-      btn_cancel: Cancel
-      btn_confirm: Add
+      btn_cancel: Avbryt
+      btn_confirm: Lägg till
     formula:
       text: Formula
       options:
@@ -586,7 +586,7 @@ ui:
         h5: Heading 5
         h6: Heading 6
     help:
-      text: Help
+      text: Hjälp
     hr:
       text: Horizontal rule
     image:
@@ -603,7 +603,7 @@ ui:
               only_image: Only image files are allowed.
               max_size: File size cannot exceed 4 MB.
           desc:
-            label: Description
+            label: Beskrivning
       tab_url: Image URL
       form_url:
         fields:
@@ -612,9 +612,9 @@ ui:
             msg:
               empty: Image URL cannot be empty.
           name:
-            label: Description
-      btn_cancel: Cancel
-      btn_confirm: Add
+            label: Beskrivning
+      btn_cancel: Avbryt
+      btn_confirm: Lägg till
       uploading: Uploading
     indent:
       text: Indent
@@ -632,8 +632,8 @@ ui:
             msg:
               empty: URL cannot be empty.
           name:
-            label: Description
-      btn_cancel: Cancel
+            label: Beskrivning
+      btn_cancel: Avbryt
       btn_confirm: Add
     ordered_list:
       text: Numbered list
@@ -645,8 +645,8 @@ ui:
       cell: Cell
   close_modal:
     title: I am closing this post as...
-    btn_cancel: Cancel
-    btn_submit: Submit
+    btn_cancel: Avbryt
+    btn_submit: Skicka
     remark:
       empty: Cannot be empty.
     msg:
@@ -657,8 +657,8 @@ ui:
     review_question_title: Review question
     review_answer_title: Review answer
     review_comment_title: Review comment
-    btn_cancel: Cancel
-    btn_submit: Submit
+    btn_cancel: Avbryt
+    btn_submit: Skicka
     remark:
       empty: Cannot be empty.
     msg:
@@ -668,7 +668,7 @@ ui:
     form:
       fields:
         display_name:
-          label: Display name
+          label: Visningsnamn
           msg:
             empty: Display name cannot be empty.
             range: Display name up to 35 characters.
@@ -680,9 +680,9 @@ ui:
             range: URL slug up to 35 characters.
             character: URL slug contains unallowed character set.
         desc:
-          label: Description
-    btn_cancel: Cancel
-    btn_submit: Submit
+          label: Beskrivning
+    btn_cancel: Avbryt
+    btn_submit: Skicka
     btn_post: Post new tag
   tag_info:
     created_at: Created
@@ -693,8 +693,8 @@ ui:
       text: The following tags will be remapped to
       empty: No synonyms found.
       btn_add: Add a synonym
-      btn_edit: Edit
-      btn_save: Save
+      btn_edit: Redigera
+      btn_save: Spara
     synonyms_text: The following tags will be remapped to
     delete:
       title: Delete this tag
@@ -713,18 +713,18 @@ ui:
         revision:
           label: Revision
         display_name:
-          label: Display name
+          label: Visningsnamn
         slug_name:
           label: URL slug
           info: URL slug up to 35 characters.
         desc:
-          label: Description
+          label: Beskrivning
         edit_summary:
           label: Edit summary
           placeholder: >-
             Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_save_edits: Save edits
-    btn_cancel: Cancel
+    btn_cancel: Avbryt
   dates:
     long_date: MMM D
     long_date_with_year: "MMM D, YYYY"
@@ -733,19 +733,19 @@ ui:
     x_seconds_ago: "{{count}}s ago"
     x_minutes_ago: "{{count}}m ago"
     x_hours_ago: "{{count}}h ago"
-    hour: hour
-    day: day
-    hours: hours
-    days: days
+    hour: timme
+    day: dag
+    hours: timmar
+    days: dagar
   comment:
     btn_add_comment: Add comment
     reply_to: Reply to
     btn_reply: Reply
-    btn_edit: Edit
-    btn_delete: Delete
+    btn_edit: Redigera
+    btn_delete: Radera
     btn_flag: Flag
     btn_save_edits: Save edits
-    btn_cancel: Cancel
+    btn_cancel: Avbryt
     show_more: Show more comments
     tip_question: >-
       Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.
@@ -769,12 +769,12 @@ ui:
           placeholder: >-
             Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_save_edits: Save edits
-    btn_cancel: Cancel
+    btn_cancel: Avbryt
   tags:
     title: Tags
     sort_buttons:
       popular: Popular
-      name: Name
+      name: Namn
       newest: Newest
     button_follow: Follow
     button_following: Following
@@ -830,20 +830,20 @@ ui:
       question: Questions
       tag: Tags
       user: Users
-      profile: Profile
-      setting: Settings
-      logout: Log out
+      profile: Profil
+      setting: Inställningar
+      logout: Logga ut
       admin: Admin
       review: Review
       bookmark: Bookmarks
       moderation: Moderation
     search:
-      placeholder: Search
+      placeholder: Sök
   footer:
     build_on: >-
       Powered by <1> Apache Answer </1>- the open-source software that powers Q&A communities.<br />Made with love © {{cc}}.
   upload_img:
-    name: Change
+    name: Ändra
     loading: loading...
   pic_auth_code:
     title: Captcha
@@ -864,13 +864,13 @@ ui:
       url_label: Are you sure you want to resend the activation email?
       url_text: You can also give the activation link above to the user.
   login:
-    login_to_continue: Log in to continue
+    login_to_continue: Logga in för att fortsätta
     info_sign: Don't have an account? <1>Sign up</1>
     info_login: Already have an account? <1>Log in</1>
     agreements: By registering, you agree to the <1>privacy policy</1> and <3>terms of service</3>.
-    forgot_pass: Forgot password?
+    forgot_pass: Glömt lösenord?
     name:
-      label: Name
+      label: Namn
       msg:
         empty: Name cannot be empty.
         range: Name up to 30 characters.
@@ -880,12 +880,12 @@ ui:
       msg:
         empty: Email cannot be empty.
     password:
-      label: Password
+      label: Lösenord
       msg:
         empty: Password cannot be empty.
         different: The passwords entered on both sides are inconsistent
   account_forgot:
-    page_title: Forgot Your Password
+    page_title: Glömt ditt lösenord
     btn_name: Send me recovery email
     send_success: >-
       If an account matches <strong>{{mail}}</strong>, you should receive an email with instructions on how to reset your password shortly.
@@ -894,8 +894,8 @@ ui:
       msg:
         empty: Email cannot be empty.
   change_email:
-    btn_cancel: Cancel
-    btn_update: Update email address
+    btn_cancel: Avbryt
+    btn_update: Uppdatera e-postadress
     send_success: >-
       If an account matches <strong>{{mail}}</strong>, you should receive an email with instructions on how to reset your password shortly.
     email:
@@ -907,7 +907,7 @@ ui:
     remove: Remove {{ auth_name }}
   oauth_bind_email:
     subtitle: Add a recovery email to your account.
-    btn_update: Update email address
+    btn_update: Uppdatera e-postadress
     email:
       label: Email
       msg:
@@ -918,14 +918,14 @@ ui:
     modal_confirm: Connect to the existing account
   password_reset:
     page_title: Password Reset
-    btn_name: Reset my password
+    btn_name: Återställ mitt lösenord
     reset_success: >-
       You successfully changed your password; you will be redirected to the log in page.
     link_invalid: >-
       Sorry, this password reset link is no longer valid. Perhaps your password is already reset?
     to_login: Continue to log in page
     password:
-      label: Password
+      label: Lösenord
       msg:
         empty: Password cannot be empty.
         length: The length needs to be between 8 and 32
@@ -933,22 +933,22 @@ ui:
     password_confirm:
       label: Confirm new password
   settings:
-    page_title: Settings
+    page_title: Inställningar
     goto_modify: Go to modify
     nav:
-      profile: Profile
+      profile: Profil
       notification: Notifications
-      account: Account
+      account: Konto
       interface: Interface
     profile:
-      heading: Profile
-      btn_name: Save
+      heading: Profil
+      btn_name: Spara
       display_name:
-        label: Display name
+        label: Visningsnamn
         msg: Display name cannot be empty.
         msg_range: Display name up to 30 characters.
       username:
-        label: Username
+        label: Användarnamn
         caption: People can mention you as "@username".
         msg: Username cannot be empty.
         msg_range: Username up to 30 characters.
@@ -983,9 +983,9 @@ ui:
         label: All new questions for following tags
         description: Get notified of new questions for following tags.
     account:
-      heading: Account
+      heading: Konto
       change_email_btn: Change email
-      change_pass_btn: Change password
+      change_pass_btn: Ändra lösenord
       change_email_info: >-
         We've sent an email to that address. Please follow the confirmation instructions.
       email:
@@ -994,7 +994,7 @@ ui:
       pass:
         label: Current password
         msg: Password cannot be empty.
-      password_title: Password
+      password_title: Lösenord
       current_pass:
         label: Current password
         msg:
@@ -1064,7 +1064,7 @@ ui:
       btn_name: Post your answer
       add_another_answer: Add another answer
       confirm_title: Continue to answer
-      continue: Continue
+      continue: Fortsätt
       confirm_info: >-
         <p>Are you sure you want to add another answer?</p><p>You could use the edit link to refine and improve your existing answer, instead.</p>
       empty: Answer cannot be empty.
@@ -1095,14 +1095,14 @@ ui:
     undelete_desc: Are you sure you wish to undelete?
   btns:
     confirm: Confirm
-    cancel: Cancel
-    edit: Edit
-    save: Save
-    delete: Delete
+    cancel: Avbryt
+    edit: Redigera
+    save: Spara
+    delete: Radera
     undelete: Undelete
-    login: Log in
-    signup: Sign up
-    logout: Log out
+    login: Logga in
+    signup: Registrera dig
+    logout: Logga ut
     verify: Verify
     add_question: Add question
     approve: Approve
@@ -1124,12 +1124,12 @@ ui:
     reopen: Reopen
     ok: OK
   search:
-    title: Search Results
+    title: Sökresultat
     keywords: Keywords
     options: Options
     follow: Follow
     following: Following
-    counts: "{{count}} Results"
+    counts: "{{count}} resultat"
     more: More
     sort_btns:
       relevance: Relevance
@@ -1147,12 +1147,12 @@ ui:
       is_answer: "<1>is:answer</1> search answers"
     empty: We couldn't find anything. <br /> Try different or less specific keywords.
   share:
-    name: Share
-    copy: Copy link
-    via: Share post via...
+    name: Dela
+    copy: Kopiera länk
+    via: Dela inlägg via...
     copied: Copied
-    facebook: Share to Facebook
-    twitter: Share to Twitter
+    facebook: Dela på Facebook
+    twitter: Dela på Twitter
   cannot_vote_for_self: You can't vote for your own post.
   modal_confirm:
     title: Error...
@@ -1171,8 +1171,8 @@ ui:
     link: Change settings
   question:
     following_tags: Following Tags
-    edit: Edit
-    save: Save
+    edit: Redigera
+    save: Spara
     follow_tag_tip: Follow tags to curate your list of questions.
     hot_questions: Hot Questions
     all_questions: All Questions
@@ -1203,7 +1203,7 @@ ui:
     votes: Votes
     newest: Newest
     score: Score
-    edit_profile: Edit profile
+    edit_profile: Redigera profil
     visited_x_days: "Visited {{ count }} days"
     viewed: Viewed
     joined: Joined
@@ -1226,19 +1226,19 @@ ui:
     x_questions: questions
   install:
     title: Answer
-    next: Next
-    done: Done
+    next: Nästa
+    done: Klar
     config_yaml_error: Can't create the config.yaml file.
     lang:
       label: Please choose a language
     db_type:
       label: Database engine
     db_username:
-      label: Username
+      label: Användarnamn
       placeholder: root
       msg: Username cannot be empty.
     db_password:
-      label: Password
+      label: Lösenord
       placeholder: root
       msg: Password cannot be empty.
     db_host:
@@ -1283,12 +1283,12 @@ ui:
       switch: Login required
       text: Only logged in users can access this community.
     admin_name:
-      label: Name
+      label: Namn
       msg: Name cannot be empty.
       character: 'Must use the character set "a-z", "0-9", " - . _"'
       msg_max_length: Name must be at maximum 30 characters in length.
     admin_password:
-      label: Password
+      label: Lösenord
       text: >-
         You will need this password to log in. Please store it in a secure location.
       msg: Password cannot be empty.
@@ -1304,7 +1304,7 @@ ui:
     ready_desc: >-
       If you ever feel like changing more settings, visit <1>admin section</1>; find it in the site menu.
     good_luck: "Have fun, and good luck!"
-    warn_title: Warning
+    warn_title: Varning
     warn_desc: >-
       The file <1>config.yaml</1> already exists. If you need to reset any of the configuration items in this file, please delete it first.
     install_now: You may try <1>installing now</1>.
@@ -1332,9 +1332,9 @@ ui:
     contents: Contents
     questions: Questions
     answers: Answers
-    users: Users
+    users: Användare
     flags: Flags
-    settings: Settings
+    settings: Inställningar
     general: General
     interface: Interface
     smtp: SMTP
@@ -1344,14 +1344,14 @@ ui:
     tos: Terms of Service
     privacy: Privacy
     seo: SEO
-    customize: Customize
-    themes: Themes
+    customize: Anpassa
+    themes: Teman
     css_html: CSS/HTML
     login: Login
     privileges: Privileges
     plugins: Plugins
     installed_plugins: Installed Plugins
-  website_welcome: Welcome to {{site_name}}
+  website_welcome: Välkommen till {{site_name}}
   user_center:
     login: Login
     qrcode_login_tip: Please use {{ agentName }} to scan the QR code and log in.
@@ -1377,18 +1377,18 @@ ui:
       private: Private
       public: Public
       smtp: "SMTP:"
-      timezone: "Timezone:"
+      timezone: "Tidszon:"
       system_info: System info
       go_version: "Go version:"
-      database: "Database:"
+      database: "Databas:"
       database_size: "Database size:"
       storage_used: "Storage used:"
       uptime: "Uptime:"
       answer_links: Answer links
       plugins: Plugins
       github: GitHub
-      blog: Blog
-      contact: Contact
+      blog: Blogg
+      contact: Kontakt
       documents: Documents
       feedback: Feedback
       support: Support
@@ -1397,8 +1397,8 @@ ui:
       update_to: Update to
       latest: Latest
       check_failed: Check failed
-      "yes": "Yes"
-      "no": "No"
+      "yes": "Ja"
+      "no": "Nej"
       not_allowed: Not allowed
       allowed: Allowed
       enabled: Enabled
@@ -1416,17 +1416,17 @@ ui:
       review: Review
     user_role_modal:
       title: Change user role to...
-      btn_cancel: Cancel
+      btn_cancel: Avbryt
       btn_submit: Submit
     new_password_modal:
       title: Set new password
       form:
         fields:
           password:
-            label: Password
+            label: Lösenord
             text: The user will be logged out and need to login again.
             msg: Password must be at 8-32 characters in length.
-      btn_cancel: Cancel
+      btn_cancel: Avbryt
       btn_submit: Submit
     user_modal:
       title: Add new user
@@ -1438,28 +1438,28 @@ ui:
             text: Separate “name, email, password” with commas. One user per line.
             msg: "Please enter the user's email, one per line."
           display_name:
-            label: Display name
+            label: Visningsnamn
             msg: Display name must be at 4-30 characters in length.
           email:
             label: Email
             msg: Email is not valid.
           password:
-            label: Password
+            label: Lösenord
             msg: Password must be at 8-32 characters in length.
-      btn_cancel: Cancel
+      btn_cancel: Avbryt
       btn_submit: Submit
     users:
-      title: Users
-      name: Name
+      title: Användare
+      name: Namn
       email: Email
       reputation: Reputation
       created_at: Created Time
       delete_at: Deleted Time
       suspend_at: Suspended Time
       status: Status
-      role: Role
+      role: Roll
       action: Action
-      change: Change
+      change: Ändra
       all: All
       staff: Staff
       more: More
@@ -1469,12 +1469,12 @@ ui:
       normal: Normal
       Moderator: Moderator
       Admin: Admin
-      User: User
+      User: Användare
       filter:
         placeholder: "Filter by name, user:id"
       set_new_password: Set new password
-      change_status: Change status
-      change_role: Change role
+      change_status: Ändra status
+      change_role: Ändra roll
       show_logs: Show logs
       add_user: Add user
       deactivate_user:
@@ -1546,7 +1546,7 @@ ui:
         msg: Interface language cannot be empty.
         text: User interface language. It will change when you refresh the page.
       time_zone:
-        label: Timezone
+        label: Tidszon
         msg: Timezone cannot be empty.
         text: Choose a city in the same timezone as you.
     smtp:
@@ -1587,8 +1587,8 @@ ui:
         label: Enable authentication
         title: SMTP authentication
         msg: SMTP authentication cannot be empty.
-        "yes": "Yes"
-        "no": "No"
+        "yes": "Ja"
+        "no": "Nej"
     branding:
       page_title: Branding
       logo:
@@ -1611,7 +1611,7 @@ ui:
         label: Terms of service
         text: "You can add terms of service content here. If you already have a document hosted elsewhere, provide the full URL here."
       privacy_policy:
-        label: Privacy policy
+        label: Integritetspolicy
         text: "You can add privacy policy content here. If you already have a document hosted elsewhere, provide the full URL here."
     write:
       page_title: Write
@@ -1700,15 +1700,15 @@ ui:
       plugins:
         label: Plugins
         text: Select an existing plugin.
-      name: Name
+      name: Namn
       version: Version
       status: Status
       action: Action
       deactivate: Deactivate
       activate: Activate
-      settings: Settings
+      settings: Inställningar
     settings_users:
-      title: Users
+      title: Användare
       avatar:
         label: Default avatar
         text: For users without a custom avatar of their own.
@@ -1718,9 +1718,9 @@ ui:
       profile_editable:
         title: Profile editable
       allow_update_display_name:
-        label: Allow users to change their display name
+        label: Tillåt användare att ändra sitt visningsnamn
       allow_update_username:
-        label: Allow users to change their username
+        label: Tillåt användare att ändra sitt användarnamn
       allow_update_avatar:
         label: Allow users to change their profile image
       allow_update_bio:
@@ -1738,7 +1738,7 @@ ui:
     optional: (optional)
     empty: cannot be empty
     invalid: is invalid
-    btn_submit: Save
+    btn_submit: Spara
     not_found_props: "Required property {{ key }} not found."
     select: Select
   page_review:
@@ -1784,7 +1784,7 @@ ui:
     comment: Comment
     no_data: "We couldn't find anything."
   users:
-    title: Users
+    title: Användare
     users_with_the_most_reputation: Users with the highest reputation scores this week
     users_with_the_most_vote: Users who voted the most this week
     staffs: Our community staff
