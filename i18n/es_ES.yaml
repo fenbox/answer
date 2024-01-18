@@ -31,7 +31,7 @@ backend:
     forbidden_error:
       other: Prohibido.
     duplicate_request_error:
-      other: Doble sumisión.
+      other: Solicitud duplicada.
   action:
     report:
       other: Reportar
@@ -75,13 +75,13 @@ backend:
   privilege:
     level_1:
       description:
-        other: Nivel 1 (menor reputación requerida para un equipo privado, grupo)
+        other: Nivel 1 (reputación menor requerida para un equipo privado, grupo)
     level_2:
       description:
-        other: Nivel 2 (baja reputación requerida para una comunidad de Startup)
+        other: Nivel 2 (reputación baja requerida para una comunidad de Startup)
     level_3:
       description:
-        other: Nivel 3 (baja reputación requerida para una comunidad madura)
+        other: Nivel 3 (reputación alta requerida para una comunidad madura)
     rank_question_add_label:
       other: Hacer una pregunta
     rank_answer_add_label:
