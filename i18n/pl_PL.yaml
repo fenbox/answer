@@ -82,6 +82,9 @@ backend:
     level_3:
       description:
         other: Poziom 3 (wysoka reputacja wymagana dla dojrzałej społeczności)
+    level_custom:
+      description:
+        other: Custom Level
     rank_question_add_label:
       other: Zadaj pytanie
     rank_answer_add_label:
@@ -681,6 +684,12 @@ ui:
             character: Slug adresu URL zawiera niedozwolony zestaw znaków.
         desc:
           label: Opis
+        revision:
+          label: Revision
+        edit_summary:
+          label: Edit summary
+          placeholder: >-
+            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_cancel: Anuluj
     btn_submit: Prześlij
     btn_post: Opublikuj nowy tag
@@ -708,21 +717,6 @@ ui:
     title: Edytuj tag
     default_reason: Edytuj tag
     default_first_reason: Dodaj tag
-    form:
-      fields:
-        revision:
-          label: Rewizja
-        display_name:
-          label: Nazwa wyświetlana
-        slug_name:
-          label: Adres URL slug
-          info: Odnośnik URL slug może zawierać maksymalnie 35 znaków.
-        desc:
-          label: Opis
-        edit_summary:
-          label: Edit summary
-          placeholder: >-
-            Pokrótce opisz swoje zmiany (poprawa pisowni, naprawa gramatyki, poprawa formatowania)
     btn_save_edits: Zapisz edycje
     btn_cancel: Anuluj
   dates:
@@ -746,7 +740,7 @@ ui:
     btn_flag: Zgłoś
     btn_save_edits: Zapisz edycje
     btn_cancel: Anuluj
-    show_more: Pokaż więcej komentarzy
+    show_more: "{{count}} more comments"
     tip_question: >-
       Użyj komentarzy, aby poprosić o dodatkowe informacje lub sugerować poprawki. Unikaj udzielania odpowiedzi na pytania w komentarzach.
     tip_answer: >-
@@ -971,10 +965,10 @@ ui:
         label: Lokalizacja
         placeholder: "Miasto, Kraj"
     notification:
-      heading: Powiadomienia
-      email: Email
+      heading: Email Notifications
+      turn_on: Turn on
       inbox:
-        label: Powiadomienia email
+        label: Inbox notifications
         description: Odpowiedzi na Twoje pytania, komentarze, zaproszenia i inne.
       all_new_question:
         label: Wszystkie nowe pytania
@@ -1029,7 +1023,7 @@ ui:
     answers: odpowiedzi
   invite_to_answer:
     title: People Asked
-    desc: Zaproś osoby, które mogą znać odpowiedź.
+    desc: Select people who you think might know the answer.
     invite: Zaproś do odpowiedzi
     add: Dodaj osoby
     search: Wyszukaj osoby
@@ -1123,6 +1117,11 @@ ui:
     close: Zamknij
     reopen: Otwórz ponownie
     ok: Ok
+    light: Light
+    dark: Dark
+    system_setting: System setting
+    default: Default
+    reset: Reset
   search:
     title: Wyniki wyszukiwania
     keywords: Słowa kluczowe
@@ -1642,11 +1641,12 @@ ui:
       themes:
         label: Motywy
         text: Wybierz istniejący motyw.
+      color_scheme:
+        label: Color scheme
       navbar_style:
-        label: Styl paska nawigacyjnego
-        text: Wybierz istniejący motyw.
+        label: Navbar style
       primary_color:
-        label: Główny kolor
+        label: Primary color
         text: Zmodyfikuj kolory używane przez Twoje motywy.
     css_and_html:
       page_title: CSS i HTML
