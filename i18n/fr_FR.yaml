@@ -82,6 +82,9 @@ backend:
     level_3:
       description:
         other: Level 3 (high reputation required for mature community)
+    level_custom:
+      description:
+        other: Custom Level
     rank_question_add_label:
       other: Poser une question
     rank_answer_add_label:
@@ -681,6 +684,12 @@ ui:
             character: Le slug d'URL contient un jeu de caractères non autorisé.
         desc:
           label: Description
+        revision:
+          label: Revision
+        edit_summary:
+          label: Edit summary
+          placeholder: >-
+            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_cancel: Annuler
     btn_submit: Valider
     btn_post: Publier un nouveau tag
@@ -708,21 +717,6 @@ ui:
     title: Editer le tag
     default_reason: Éditer le tag
     default_first_reason: Ajouter un tag
-    form:
-      fields:
-        revision:
-          label: Révision
-        display_name:
-          label: Nom Affiché
-        slug_name:
-          label: URL slug
-          info: URL slug up to 35 characters.
-        desc:
-          label: Description
-        edit_summary:
-          label: Edit summary
-          placeholder: >-
-            Expliquez brièvement vos changements (correction orthographique, correction grammaticale, mise en forme améliorée)
     btn_save_edits: Enregistrer les modifications
     btn_cancel: Annuler
   dates:
@@ -746,7 +740,7 @@ ui:
     btn_flag: Balise
     btn_save_edits: Enregistrer les modifications
     btn_cancel: Annuler
-    show_more: Afficher plus de commentaires
+    show_more: "{{count}} commentaires restants"
     tip_question: >-
       Utilisez les commentaires pour demander plus d'informations ou suggérer des améliorations. Évitez de répondre aux questions dans les commentaires.
     tip_answer: >-
@@ -972,7 +966,7 @@ ui:
         placeholder: "Ville, Pays"
     notification:
       heading: Notifications
-      email: E-mail
+      turn_on: Turn on
       inbox:
         label: Notifications par e-mail
         description: Réponses à vos questions, commentaires, invitaitons et plus.
@@ -1029,7 +1023,7 @@ ui:
     answers: réponses
   invite_to_answer:
     title: Personnes interrogées
-    desc: Invitez des personnes que vous pensez connaître la réponse.
+    desc: Invite people who you think might know the answer.
     invite: Inviter à répondre
     add: Ajouter des personnes
     search: Rechercher des personnes
@@ -1123,6 +1117,11 @@ ui:
     close: Fermer
     reopen: Rouvrir
     ok: OK
+    light: Light
+    dark: Dark
+    system_setting: System setting
+    default: Default
+    reset: Reset
   search:
     title: Résultats de la recherche
     keywords: Mots-clés
@@ -1642,9 +1641,10 @@ ui:
       themes:
         label: Thèmes
         text: Sélectionne un thème existant.
+      color_scheme:
+        label: Color scheme
       navbar_style:
         label: Style de la Navbar
-        text: Sélectionne un thème existant.
       primary_color:
         label: Couleur primaire
         text: Modifier les couleurs utilisées par vos thèmes
