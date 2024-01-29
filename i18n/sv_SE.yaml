@@ -36,9 +36,9 @@ backend:
     report:
       other: Flag
     edit:
-      other: Ändra
+      other: Redigera
     delete:
-      other: Ta bort
+      other: Radera
     close:
       other: Stäng
     reopen:
@@ -54,7 +54,7 @@ backend:
     show:
       other: Lista
     invite_someone_to_answer:
-      other: Ändra
+      other: Redigera
     undelete:
       other: Undelete
   role:
@@ -451,7 +451,7 @@ backend:
         other: "<a href='{{.CommentUrl}}'>{{.QuestionTitle}}</a><br><br>\n\n{{.DisplayName}}:<br>\n<blockquote>{{.CommentSummary}}</blockquote><br>\n<a href='{{.CommentUrl}}'>View it on {{.SiteName}}</a><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Unsubscribe</a></small>"
     new_question:
       title:
-        other: "[{{.SiteName}}] New question: {{.QuestionTitle}}"
+        other: "[{{.SiteName}}] Ny fråga: {{.QuestionTitle}}"
       body:
         other: "<a href='{{.QuestionUrl}}'>{{.QuestionTitle}}</a><br>\n<small>{{.Tags}}</small><br><br>\n\n--<br>\n<small><a href='{{.UnsubscribeUrl}}'>Unsubscribe</a></small>"
     pass_reset:
@@ -461,9 +461,9 @@ backend:
         other: "Somebody asked to reset your password on {{.SiteName}}.<br><br>\n\nIf it was not you, you can safely ignore this email.<br><br>\n\nClick the following link to choose a new password:<br>\n<a href='{{.PassResetUrl}}' target='_blank'>{{.PassResetUrl}}</a>\n"
     register:
       title:
-        other: "[{{.SiteName}}] Confirm your new account"
+        other: "[{{.SiteName}}] Bekräfta ditt nya konto"
       body:
-        other: "Welcome to {{.SiteName}}!<br><br>\n\nClick the following link to confirm and activate your new account:<br>\n<a href='{{.RegisterUrl}}' target='_blank'>{{.RegisterUrl}}</a><br><br>\n\nIf the above link is not clickable, try copying and pasting it into the address bar of your web browser.\n"
+        other: "Välkommen till {{.SiteName}}!<br><br>\n\nKlicka på följande länk för att bekräfta och aktivera ditt nya konto:<br>\n<a href='{{.RegisterUrl}}' target='_blank'>{{.RegisterUrl}}</a><br><br>\n\nOm ovanstående länk inte går att klicka på, kan du kopiera och klistra in den i adressfältet i din webbläsare.\n"
     test:
       title:
         other: "[{{.SiteName}}] Test Email"
@@ -533,9 +533,9 @@ ui:
     someone: Someone
     inbox_type:
       all: All
-      posts: Posts
-      invites: Invites
-      votes: Votes
+      posts: Inlägg
+      invites: Inbjudningar
+      votes: Röster
   suspended:
     title: Your Account has been Suspended
     until_time: "Your account was suspended until {{ time }}."
@@ -563,7 +563,7 @@ ui:
       form:
         fields:
           code:
-            label: Code
+            label: Kod
             msg:
               empty: Code cannot be empty.
           language:
@@ -590,7 +590,7 @@ ui:
     hr:
       text: Horizontal rule
     image:
-      text: Image
+      text: Bild
       add_image: Add image
       tab_image: Upload image
       form_image:
@@ -634,13 +634,13 @@ ui:
           name:
             label: Beskrivning
       btn_cancel: Avbryt
-      btn_confirm: Add
+      btn_confirm: Lägg till
     ordered_list:
       text: Numbered list
     unordered_list:
       text: Bulleted list
     table:
-      text: Table
+      text: Tabell
       heading: Heading
       cell: Cell
   close_modal:
@@ -685,14 +685,14 @@ ui:
     btn_submit: Skicka
     btn_post: Post new tag
   tag_info:
-    created_at: Created
+    created_at: Skapad
     edited_at: Edited
-    history: History
+    history: Historik
     synonyms:
-      title: Synonyms
+      title: Synonymer
       text: The following tags will be remapped to
-      empty: No synonyms found.
-      btn_add: Add a synonym
+      empty: Inga synonymer hittades.
+      btn_add: Lägg till en synonym
       btn_edit: Redigera
       btn_save: Spara
     synonyms_text: The following tags will be remapped to
@@ -730,23 +730,23 @@ ui:
     long_date_with_year: "MMM D, YYYY"
     long_date_with_time: "MMM D, YYYY [at] HH:mm"
     now: now
-    x_seconds_ago: "{{count}}s ago"
-    x_minutes_ago: "{{count}}m ago"
-    x_hours_ago: "{{count}}h ago"
+    x_seconds_ago: "{{count}} s sedan"
+    x_minutes_ago: "{{count}} m sedan"
+    x_hours_ago: "{{count}} t sedan"
     hour: timme
     day: dag
     hours: timmar
     days: dagar
   comment:
-    btn_add_comment: Add comment
+    btn_add_comment: Lägg till kommentar
     reply_to: Reply to
-    btn_reply: Reply
+    btn_reply: Svara
     btn_edit: Redigera
     btn_delete: Radera
     btn_flag: Flag
     btn_save_edits: Save edits
     btn_cancel: Avbryt
-    show_more: Show more comments
+    show_more: Visa fler kommentarer
     tip_question: >-
       Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.
     tip_answer: >-
@@ -776,8 +776,8 @@ ui:
       popular: Popular
       name: Namn
       newest: Newest
-    button_follow: Follow
-    button_following: Following
+    button_follow: Följ
+    button_following: Följer
     tag_label: questions
     search_placeholder: Filter by tag name
     no_desc: The tag has no description.
@@ -829,13 +829,13 @@ ui:
     nav:
       question: Questions
       tag: Tags
-      user: Users
+      user: Användare
       profile: Profil
       setting: Inställningar
       logout: Logga ut
       admin: Admin
       review: Review
-      bookmark: Bookmarks
+      bookmark: Bokmärken
       moderation: Moderation
     search:
       placeholder: Sök
@@ -865,8 +865,8 @@ ui:
       url_text: You can also give the activation link above to the user.
   login:
     login_to_continue: Logga in för att fortsätta
-    info_sign: Don't have an account? <1>Sign up</1>
-    info_login: Already have an account? <1>Log in</1>
+    info_sign: Har du inget konto? <1>Registrera dig</1>
+    info_login: Har du redan ett konto? <1>Logga in</1>
     agreements: By registering, you agree to the <1>privacy policy</1> and <3>terms of service</3>.
     forgot_pass: Glömt lösenord?
     name:
@@ -992,19 +992,19 @@ ui:
         label: New email
         msg: New email cannot be empty.
       pass:
-        label: Current password
+        label: Nuvarande lösenord
         msg: Password cannot be empty.
       password_title: Lösenord
       current_pass:
-        label: Current password
+        label: Nuvarande lösenord
         msg:
           empty: Current password cannot be empty.
           length: The length needs to be between 8 and 32.
           different: The two entered passwords do not match.
       new_pass:
-        label: New password
+        label: Nytt lösenord
       pass_confirm:
-        label: Confirm new password
+        label: Bekräfta nytt lösenord
     interface:
       heading: Interface
       lang:
@@ -1059,7 +1059,7 @@ ui:
       btn_accept: Accept
       btn_accepted: Accepted
     write_answer:
-      title: Your Answer
+      title: Ditt svar
       edit_answer: Edit my existing answer
       btn_name: Post your answer
       add_another_answer: Add another answer
@@ -1082,19 +1082,19 @@ ui:
     pin:
       title: Pin this post
       content: Are you sure you wish to pinned globally? This post will appear at the top of all post lists.
-      confirm_btn: Pin
+      confirm_btn: Fäst
   delete:
     title: Delete this post
     question: >-
       We do not recommend <strong>deleting questions with answers</strong> because doing so deprives future readers of this knowledge.</p><p>Repeated deletion of answered questions can result in your account being blocked from asking. Are you sure you wish to delete?
     answer_accepted: >-
       <p>We do not recommend <strong>deleting accepted answer</strong> because doing so deprives future readers of this knowledge. </p> Repeated deletion of accepted answers can result in your account being blocked from answering. Are you sure you wish to delete?
-    other: Are you sure you wish to delete?
+    other: Är du säker på att du vill radera?
     tip_answer_deleted: This answer has been deleted
     undelete_title: Undelete this post
     undelete_desc: Are you sure you wish to undelete?
   btns:
-    confirm: Confirm
+    confirm: Bekräfta
     cancel: Avbryt
     edit: Redigera
     save: Spara
@@ -1114,19 +1114,19 @@ ui:
     question: Question
     answer: Answer
     comment: Comment
-    refresh: Refresh
+    refresh: Uppdatera
     resend: Resend
     deactivate: Deactivate
     active: Active
     suspend: Suspend
     unsuspend: Unsuspend
-    close: Close
+    close: Stäng
     reopen: Reopen
     ok: OK
   search:
     title: Sökresultat
     keywords: Keywords
-    options: Options
+    options: Alternativ
     follow: Follow
     following: Following
     counts: "{{count}} resultat"
@@ -1176,8 +1176,8 @@ ui:
     follow_tag_tip: Follow tags to curate your list of questions.
     hot_questions: Hot Questions
     all_questions: All Questions
-    x_questions: "{{ count }} Questions"
-    x_answers: "{{ count }} answers"
+    x_questions: "{{ count }} frågor"
+    x_answers: "{{ count }} svar"
     questions: Questions
     answers: Answers
     newest: Newest
@@ -1197,10 +1197,10 @@ ui:
     answer: answer
     questions: Questions
     question: question
-    bookmarks: Bookmarks
+    bookmarks: Bokmärken
     reputation: Reputation
-    comments: Comments
-    votes: Votes
+    comments: Kommentarer
+    votes: Röster
     newest: Newest
     score: Score
     edit_profile: Redigera profil
@@ -1230,7 +1230,7 @@ ui:
     done: Klar
     config_yaml_error: Can't create the config.yaml file.
     lang:
-      label: Please choose a language
+      label: Välj ett språk
     db_type:
       label: Database engine
     db_username:
@@ -1246,7 +1246,7 @@ ui:
       placeholder: "db:3306"
       msg: Database host cannot be empty.
     db_name:
-      label: Database name
+      label: Databasnamn
       placeholder: answer
       msg: Database name cannot be empty.
     db_file:
@@ -1254,7 +1254,7 @@ ui:
       placeholder: /data/answer.db
       msg: Database file cannot be empty.
     config_yaml:
-      title: Create config.yaml
+      title: Skapa config.yaml
       label: The config.yaml file created.
       desc: >-
         You can create the <1>config.yaml</1> file manually in the <1>/var/wwww/xxx/</1> directory and paste the following text into it.
@@ -1341,20 +1341,20 @@ ui:
     branding: Branding
     legal: Legal
     write: Write
-    tos: Terms of Service
+    tos: Användarvillkor
     privacy: Privacy
     seo: SEO
     customize: Anpassa
     themes: Teman
     css_html: CSS/HTML
-    login: Login
+    login: Logga in
     privileges: Privileges
     plugins: Plugins
     installed_plugins: Installed Plugins
   website_welcome: Välkommen till {{site_name}}
   user_center:
     login: Login
-    qrcode_login_tip: Please use {{ agentName }} to scan the QR code and log in.
+    qrcode_login_tip: Använd {{ agentName }} för att skanna QR-koden och logga in.
     login_failed_email_tip: Login failed, please allow this app to access your email information before try again.
   admin:
     admin_header:
@@ -1363,18 +1363,18 @@ ui:
       title: Dashboard
       welcome: Welcome to Answer Admin!
       site_statistics: Site statistics
-      questions: "Questions:"
-      answers: "Answers:"
-      comments: "Comments:"
-      votes: "Votes:"
-      users: "Users:"
+      questions: "Frågor:"
+      answers: "Svar:"
+      comments: "Kommentarer:"
+      votes: "Röster:"
+      users: "Användare:"
       flags: "Flags:"
       site_health_status: Site health status
       version: "Version:"
       https: "HTTPS:"
       upload_folder: "Upload folder:"
       run_mode: "Running mode:"
-      private: Private
+      private: Privat
       public: Public
       smtp: "SMTP:"
       timezone: "Tidszon:"
@@ -1389,7 +1389,7 @@ ui:
       github: GitHub
       blog: Blogg
       contact: Kontakt
-      documents: Documents
+      documents: Dokument
       feedback: Feedback
       support: Support
       review: Review
@@ -1415,9 +1415,9 @@ ui:
       action: Action
       review: Review
     user_role_modal:
-      title: Change user role to...
+      title: Ändra användarroll till...
       btn_cancel: Avbryt
-      btn_submit: Submit
+      btn_submit: Skicka
     new_password_modal:
       title: Set new password
       form:
@@ -1427,15 +1427,15 @@ ui:
             text: The user will be logged out and need to login again.
             msg: Password must be at 8-32 characters in length.
       btn_cancel: Avbryt
-      btn_submit: Submit
+      btn_submit: Skicka
     user_modal:
-      title: Add new user
+      title: Lägg till ny användare
       form:
         fields:
           users:
             label: Bulk add user
             placeholder: "John Smith, john@example.com, BUSYopr2\nAlice, alice@example.com, fpDntV8q"
-            text: Separate “name, email, password” with commas. One user per line.
+            text: Separera "namn, e-postadress, lösenord" med kommatecken. En användare per rad.
             msg: "Please enter the user's email, one per line."
           display_name:
             label: Visningsnamn
@@ -1447,7 +1447,7 @@ ui:
             label: Lösenord
             msg: Password must be at 8-32 characters in length.
       btn_cancel: Avbryt
-      btn_submit: Submit
+      btn_submit: Skicka
     users:
       title: Användare
       name: Namn
@@ -1475,7 +1475,7 @@ ui:
       set_new_password: Set new password
       change_status: Ändra status
       change_role: Ändra roll
-      show_logs: Show logs
+      show_logs: Visa loggar
       add_user: Lägg till användare
       deactivate_user:
         title: Deactivate user
@@ -1524,7 +1524,7 @@ ui:
       site_url:
         label: Site URL
         msg: Site url cannot be empty.
-        validate: Please enter a valid URL.
+        validate: Ange en giltig URL.
         text: The address of your site.
       short_desc:
         label: Short site description
@@ -1564,11 +1564,11 @@ ui:
         msg: SMTP host cannot be empty.
         text: Your mail server.
       encryption:
-        label: Encryption
+        label: Kryptering
         msg: Encryption cannot be empty.
         text: For most servers SSL is the recommended option.
         ssl: SSL
-        none: None
+        none: Ingen
       smtp_port:
         label: SMTP port
         msg: SMTP port must be number 1 ~ 65535.
@@ -1584,7 +1584,7 @@ ui:
         text: Provide email address that will receive test sends.
         msg: Test email recipients is invalid
       smtp_authentication:
-        label: Enable authentication
+        label: Aktivera autentisering
         title: SMTP authentication
         msg: SMTP authentication cannot be empty.
         "yes": "Ja"
@@ -1608,7 +1608,7 @@ ui:
     legal:
       page_title: Legal
       terms_of_service:
-        label: Terms of service
+        label: Användarvillkor
         text: "You can add terms of service content here. If you already have a document hosted elsewhere, provide the full URL here."
       privacy_policy:
         label: Integritetspolicy
@@ -1632,7 +1632,7 @@ ui:
     seo:
       page_title: SEO
       permalink:
-        label: Permalink
+        label: Permalänk
         text: Custom URL structures can improve the usability, and forward-compatibility of your links.
       robots:
         label: robots.txt
@@ -1646,12 +1646,12 @@ ui:
         label: Navbar Style
         text: Select an existing theme.
       primary_color:
-        label: Primary Color
+        label: Primärfärg
         text: Modify the colors used by your themes
     css_and_html:
-      page_title: CSS and HTML
+      page_title: CSS och HTML
       custom_css:
-        label: Custom CSS
+        label: Anpassad CSS
         text: >
 
       head:
@@ -1722,7 +1722,7 @@ ui:
       allow_update_username:
         label: Tillåt användare att ändra sitt användarnamn
       allow_update_avatar:
-        label: Allow users to change their profile image
+        label: Tillåt användare att ändra sin profilbild
       allow_update_bio:
         label: Allow users to change their about me
       allow_update_website:
@@ -1750,7 +1750,7 @@ ui:
     edit_summary: Edit summary
     edit_question: Edit question
     edit_answer: Edit answer
-    edit_tag: Edit tag
+    edit_tag: Redigera tagg
     empty: No review tasks left.
   timeline:
     undeleted: undeleted
@@ -1773,7 +1773,7 @@ ui:
     hide: unlisted
     title: "History for"
     tag_title: "Timeline for"
-    show_votes: "Show votes"
+    show_votes: "Visa röster"
     n_or_a: N/A
     title_for_question: "Timeline for"
     title_for_answer: "Timeline for answer to {{ title }} by {{ author }}"
@@ -1789,10 +1789,10 @@ ui:
     users_with_the_most_vote: Users who voted the most this week
     staffs: Our community staff
     reputation: reputation
-    votes: votes
+    votes: röster
   prompt:
     leave_page: Are you sure you want to leave the page?
-    changes_not_save: Your changes may not be saved.
+    changes_not_save: Dina ändringar kanske inte sparas.
   draft:
     discard_confirm: Are you sure you want to discard your draft?
   messages:
