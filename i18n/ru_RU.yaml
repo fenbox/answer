@@ -82,6 +82,9 @@ backend:
     level_3:
       description:
         other: Уровень 3 (для зрелого сообщества требуется высокая репутация)
+    level_custom:
+      description:
+        other: Custom Level
     rank_question_add_label:
       other: Задать вопрос
     rank_answer_add_label:
@@ -681,6 +684,12 @@ ui:
             character: URL slug содержит недопустимый набор символов.
         desc:
           label: Описание
+        revision:
+          label: Revision
+        edit_summary:
+          label: Edit summary
+          placeholder: >-
+            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_cancel: Отмена
     btn_submit: Отправить
     btn_post: Создать новый тег
@@ -708,21 +717,6 @@ ui:
     title: Изменить тег
     default_reason: Правка тега
     default_first_reason: Добавить метку
-    form:
-      fields:
-        revision:
-          label: Редакция
-        display_name:
-          label: Отобразить имя
-        slug_name:
-          label: Идентификатор тега
-          info: 'Необходимо использовать набор символов "a-z", "0-9", "+ # - ."'
-        desc:
-          label: Описание
-        edit_summary:
-          label: Изменить краткое описание
-          placeholder: >-
-            Кратко опишите ваши изменения (исправленная орфография, исправленная грамматика, улучшенное форматирование)
     btn_save_edits: Сохранить изменения
     btn_cancel: Отмена
   dates:
@@ -746,7 +740,7 @@ ui:
     btn_flag: Отметить
     btn_save_edits: Сохранить изменения
     btn_cancel: Отменить
-    show_more: Показать больше комментариев
+    show_more: "{{count}} more comments"
     tip_question: >-
       Воспользуйтесь комментариями, чтобы запросить больше информации или предложить улучшения. Не отвечайте на вопросы в комментариях.
     tip_answer: >-
@@ -971,10 +965,10 @@ ui:
         label: Местоположение
         placeholder: "Город, страна"
     notification:
-      heading: Уведомления
-      email: Email
+      heading: Email Notifications
+      turn_on: Turn on
       inbox:
-        label: Email уведомления
+        label: Inbox notifications
         description: Answers to your questions, comments, invites, and more.
       all_new_question:
         label: Все новые вопросы
@@ -1029,7 +1023,7 @@ ui:
     answers: ответы
   invite_to_answer:
     title: Люди спрашивали
-    desc: Пригласите людей, которые, по вашему мнению, могут знать ответ.
+    desc: Select people who you think might know the answer.
     invite: Пригласил вас ответить
     add: Добавить пользователей
     search: Поиск людей
@@ -1123,6 +1117,11 @@ ui:
     close: Закрыть
     reopen: Открыть повторно
     ok: ОК
+    light: Light
+    dark: Dark
+    system_setting: System setting
+    default: Default
+    reset: Reset
   search:
     title: Результаты поиска
     keywords: Ключевые слова
@@ -1642,11 +1641,12 @@ ui:
       themes:
         label: Темы
         text: Select an existing theme.
+      color_scheme:
+        label: Color scheme
       navbar_style:
-        label: Navbar Style
-        text: Select an existing theme.
+        label: Navbar style
       primary_color:
-        label: Основной цвет
+        label: Primary color
         text: Измените цвета, используемые в ваших темах
     css_and_html:
       page_title: CSS and HTML
