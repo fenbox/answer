@@ -82,6 +82,9 @@ backend:
     level_3:
       description:
         other: Nivelul 3 (reputație ridicată necesară pentru comunitatea mature)
+    level_custom:
+      description:
+        other: Custom Level
     rank_question_add_label:
       other: Întreabă ceva
     rank_answer_add_label:
@@ -681,6 +684,12 @@ ui:
             character: URL-ul slug conţine un set de caractere nepermis.
         desc:
           label: Descriere
+        revision:
+          label: Revision
+        edit_summary:
+          label: Edit summary
+          placeholder: >-
+            Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_cancel: Anulează
     btn_submit: Trimiteți
     btn_post: Postează o nouă etichetă
@@ -708,21 +717,6 @@ ui:
     title: Editează eticheta
     default_reason: Editare etichetă
     default_first_reason: Adaugă etichetă
-    form:
-      fields:
-        revision:
-          label: Revizuire
-        display_name:
-          label: Nume afișat
-        slug_name:
-          label: Slug URL
-          info: Slug-ul URL pana la 35 de caractere.
-        desc:
-          label: Descriere
-        edit_summary:
-          label: Editează sumarul
-          placeholder: >-
-            Explicați pe scurt modificările (ortografie corectată, gramatică fixată, formatare îmbunătățită)
     btn_save_edits: Salvați modificările
     btn_cancel: Anulați
   dates:
@@ -746,7 +740,7 @@ ui:
     btn_flag: Marcaj
     btn_save_edits: Salvați modificările
     btn_cancel: Anulați
-    show_more: Arată mai multe comentarii
+    show_more: "{{count}} more comments"
     tip_question: >-
       Utilizați comentariile pentru a solicita mai multe informații sau pentru a sugera îmbunătățiri. Evitați răspunsul la întrebări în comentarii.
     tip_answer: >-
@@ -971,10 +965,10 @@ ui:
         label: Locație
         placeholder: "Oraş, Ţară"
     notification:
-      heading: Notificări
-      email: E-mail
+      heading: Email Notifications
+      turn_on: Turn on
       inbox:
-        label: Notificări prin email
+        label: Inbox notifications
         description: Răspunde la întrebări, comentarii, invitații și multe altele.
       all_new_question:
         label: Adauga o intrebare noua
@@ -1029,7 +1023,7 @@ ui:
     answers: răspunsuri
   invite_to_answer:
     title: Persoane întrebate
-    desc: Invită persoane care crezi că știu răspunsul.
+    desc: Select people who you think might know the answer.
     invite: Invită să răspundă
     add: Adaugă persoane
     search: Caută persoane
@@ -1123,6 +1117,11 @@ ui:
     close: Închide
     reopen: Redeschide
     ok: OK
+    light: Light
+    dark: Dark
+    system_setting: System setting
+    default: Default
+    reset: Reset
   search:
     title: Rezultatele căutării
     keywords: Cuvinte cheie
@@ -1642,11 +1641,12 @@ ui:
       themes:
         label: Teme
         text: Selectaţi o temă existentă.
+      color_scheme:
+        label: Color scheme
       navbar_style:
-        label: Stil bară de navigare
-        text: Selectaţi o temă existentă.
+        label: Navbar style
       primary_color:
-        label: Culoare Primară
+        label: Primary color
         text: Modifică culorile folosite de temele tale
     css_and_html:
       page_title: CSS și HTML
