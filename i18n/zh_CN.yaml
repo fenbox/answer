@@ -82,6 +82,9 @@ backend:
     level_3:
       description:
         other: 级别 3（高声望要求，适合成熟的社区）
+    level_custom:
+      description:
+        other: Custom Level
     rank_question_add_label:
       other: 提问
     rank_answer_add_label:
@@ -681,6 +684,12 @@ ui:
             character: URL 固定链接包含非法字符。
         desc:
           label: 描述
+        revision:
+          label: 编辑历史
+        edit_summary:
+          label: 编辑摘要
+          placeholder: >-
+            简单描述更改原因 (错别字、文字表达、格式等等)
     btn_cancel: 取消
     btn_submit: 提交
     btn_post: 发布新标签
@@ -708,21 +717,6 @@ ui:
     title: 编辑标签
     default_reason: 编辑标签
     default_first_reason: 添加标签
-    form:
-      fields:
-        revision:
-          label: 修订版本
-        display_name:
-          label: 显示名称
-        slug_name:
-          label: URL 固定链接
-          info: URL 固定链接不能超过 35 个字符。
-        desc:
-          label: 描述
-        edit_summary:
-          label: 编辑摘要
-          placeholder: >-
-            简单描述更改原因（更正拼写、修复语法、改进格式）
     btn_save_edits: 保存更改
     btn_cancel: 取消
   dates:
@@ -746,7 +740,7 @@ ui:
     btn_flag: 举报
     btn_save_edits: 保存更改
     btn_cancel: 取消
-    show_more: 显示更多评论
+    show_more: "{{count}}条剩余评论"
     tip_question: >-
       使用评论提问更多信息或者提出改进意见。避免在评论里回答问题。
     tip_answer: >-
@@ -972,7 +966,7 @@ ui:
         placeholder: "城市，国家"
     notification:
       heading: 通知
-      email: 邮箱
+      turn_on: Turn on
       inbox:
         label: 邮件通知
         description: 你的提问有新的回答，评论，邀请回答和其他。
@@ -1123,6 +1117,11 @@ ui:
     close: 关闭
     reopen: 重新打开
     ok: 确定
+    light: Light
+    dark: Dark
+    system_setting: System setting
+    default: Default
+    reset: Reset
   search:
     title: 搜索结果
     keywords: 关键词
@@ -1642,9 +1641,10 @@ ui:
       themes:
         label: 主题
         text: 选择一个现有主题。
+      color_scheme:
+        label: Color scheme
       navbar_style:
         label: 导航栏样式
-        text: 选择一个现有主题。
       primary_color:
         label: 主色调
         text: 修改您主题使用的颜色
