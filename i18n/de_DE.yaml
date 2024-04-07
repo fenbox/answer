@@ -793,10 +793,10 @@ ui:
     no_desc: Der Tag hat keine Beschreibung.
     more: Mehr
   ask:
-    title: Frage hinzufügen
+    title: Frage stellen
     edit_title: Frage bearbeiten
     default_reason: Frage bearbeiten
-    default_first_reason: Frage hinzufügen
+    default_first_reason: Frage stellen
     similar_questions: Ähnliche Fragen
     form:
       fields:
@@ -1127,7 +1127,7 @@ ui:
     signup: Registrieren
     logout: Ausloggen
     verify: Überprüfen
-    add_question: Frage hinzufügen
+    add_question: Frage stellen
     approve: Genehmigen
     reject: Ablehnen
     skip: Überspringen
