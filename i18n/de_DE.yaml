@@ -1038,8 +1038,8 @@ ui:
     title: Verwandte Fragen
     answers: antworten
   invite_to_answer:
-    title: Menschen gefragt
-    desc: Wähle Leute aus, von denen du glaubst, dass sie die Antwort wissen könnten.
+    title: Frage jemanden
+    desc: Lade Leute ein, von denen du glaubst, dass sie die Antwort wissen könnten.
     invite: Zur Antwort einladen
     add: Personen hinzufügen
     search: Personen suchen
