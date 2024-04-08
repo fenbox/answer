@@ -142,7 +142,7 @@ backend:
   error:
     common:
       invalid_url:
-        other: Invalid URL.
+        other: URL non valido.
     password:
       space_invalid:
         other: La password non può contenere spazi.
@@ -204,7 +204,7 @@ backend:
       already_deleted:
         other: Questo post è stato eliminato.
       under_review:
-        other: Your post is awaiting review. It will be visible after it has been approved.
+        other: Il tuo post è in attesa di revisione. Sarà visibile dopo essere stato approvato.
       not_found:
         other: domanda non trovata
       cannot_deleted:
@@ -491,14 +491,14 @@ backend:
     accepted:
       other: Accettato
     edit:
-      other: edit
+      other: modifica
   review:
     queued_post:
-      other: Queued post
+      other: Post in coda
     flagged_post:
-      other: Flagged post
+      other: Post contrassegnato
     suggested_post_edit:
-      other: Suggested edits
+      other: Modifiche suggerite
 # The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
@@ -680,8 +680,8 @@ ui:
       empty: Non può essere vuoto.
     msg:
       empty: Per favore seleziona un motivo
-      not_a_url: URL format is incorrect.
-      url_not_match: URL origin does not match the current website.
+      not_a_url: Formato URL errato.
+      url_not_match: L'origine dell'URL non corrisponde al sito web corrente.
   tag_modal:
     title: Crea un nuovo tag
     form:
@@ -1049,7 +1049,7 @@ ui:
     asked: chiesto
     update: Modificato
     edit: modificato
-    commented: commented
+    commented: commentato
     Views: Visualizzati
     Follow: Segui
     Following: Segui già
@@ -1067,7 +1067,7 @@ ui:
       title: Risposte
       score: Punteggio
       newest: Più recenti
-      oldest: Oldest
+      oldest: Meno recente
       btn_accept: Accetta
       btn_accepted: Accettato
     write_answer:
@@ -1092,12 +1092,12 @@ ui:
       title: Riapri questo post
       content: Sei sicuro di voler riaprire?
     list:
-      confirm_btn: List
-      title: List this post
-      content: Are you sure you want to list?
+      confirm_btn: Listare
+      title: Lista questo post
+      content: Sei sicuro di volerlo listare?
     unlist:
-      confirm_btn: Unlist
-      title: Unlist this post
+      confirm_btn: Rimuovi dall'elenco
+      title: Elimina questo post
       content: Are you sure you want to unlist?
     pin:
       title: Fissa questo post in cima al profilo
