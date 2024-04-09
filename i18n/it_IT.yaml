@@ -1097,8 +1097,8 @@ ui:
       content: Sei sicuro di volerlo listare?
     unlist:
       confirm_btn: Rimuovi dall'elenco
-      title: Elimina questo post
-      content: Are you sure you want to unlist?
+      title: Rimuovi questo post
+      content: Sei sicuro di voler rimuovere dall'elenco?
     pin:
       title: Fissa questo post in cima al profilo
       content: Sei sicuro di voler fissare in blocco? Questo post apparirà in cima a tutte le liste.
@@ -1120,9 +1120,9 @@ ui:
     save: Salva
     delete: Elimina
     undelete: Ripristina
-    list: List
-    unlist: Unlist
-    unlisted: Unlisted
+    list: Aggiungi all'elenco
+    unlist: Rimuovi dall'elenco
+    unlisted: Rimosso dall'elenco
     login: Accedi
     signup: Registrati
     logout: Disconnetti
@@ -1153,13 +1153,13 @@ ui:
     reset: Resetta
     tag: Tag
     post_lowercase: post
-    filter: Filter
-    ignore: Ignore
-    submit: Submit
-    normal: Normal
-    closed: Closed
-    deleted: Deleted
-    pending: Pending
+    filter: '﻿Filtra'
+    ignore: Ignora
+    submit: Invia
+    normal: Normale
+    closed: Chiuso
+    deleted: Eliminato
+    pending: In attesa
   search:
     title: Risultati della ricerca
     keywords: Parole chiave
@@ -1406,8 +1406,8 @@ ui:
       votes: "Voti:"
       users: "Utenti:"
       flags: "Flags"
-      reviews: "Reviews:"
-      site_health: Site health
+      reviews: "Revisioni"
+      site_health: Stato del sito
       version: "Versione:"
       https: "HTTPS:"
       upload_folder: "Carica Cartella"
@@ -1422,7 +1422,7 @@ ui:
       database_size: "Dimensioni del database"
       storage_used: "Spazio di archiviazione utilizzato:"
       uptime: "Tempo di attività:"
-      links: Links
+      links: Collegamenti
       plugins: Plugin
       github: GitHub
       blog: Blog
@@ -1530,7 +1530,7 @@ ui:
         content: Un utente sospeso non può accedere.
     questions:
       page_title: Domande
-      unlisted: Unlisted
+      unlisted: Rimosso dall'elenco
       post: Posta
       votes: Voti
       answers: Risposte
@@ -1538,7 +1538,7 @@ ui:
       status: Stato
       action: Azione
       change: Modifica
-      pending: Pending
+      pending: In attesa
       filter:
         placeholder: "Filtra per titolo, domanda:id"
     answers:
@@ -1576,8 +1576,8 @@ ui:
         validate: Email di contatto non valida.
         text: Indirizzo e-mail del contatto chiave responsabile di questo sito.
       check_update:
-        label: Software updates
-        text: Automatically check for updates
+        label: Aggiornamenti Software
+        text: Controlla automaticamente gli aggiornamenti
     interface:
       page_title: Interfaccia
       language:
@@ -1792,22 +1792,22 @@ ui:
     edit_answer: Edita la risposta
     edit_tag: Edita  tag
     empty: Nessuna attività di revisione rimasta.
-    approve_revision_tip: Do you approve this revision?
-    approve_flag_tip: Do you approve this flag?
-    approve_post_tip: Do you approve this post?
-    approve_user_tip: Do you approve this user?
-    suggest_edits: Suggested edits
-    flag_post: Flag post
-    flag_user: Flag user
-    queued_post: Queued post
-    queued_user: Queued user
-    filter_label: Type
-    reputation: reputation
-    flag_post_type: Flagged this post as {{ type }}.
-    flag_user_type: Flagged this user as {{ type }}.
-    edit_post: Edit post
-    list_post: List post
-    unlist_post: Unlist post
+    approve_revision_tip: Approvi questa revisione?
+    approve_flag_tip: Approvi questo contrassegno?
+    approve_post_tip: Approvi questo post?
+    approve_user_tip: Approvate questo utente?
+    suggest_edits: Modifiche suggerite
+    flag_post: Post contrassegnato
+    flag_user: Utente contrassegno
+    queued_post: "Posta in coda\n"
+    queued_user: Utente in coda
+    filter_label: Digita
+    reputation: reputazione
+    flag_post_type: Post contrassegnato come {{ type }}.
+    flag_user_type: Utente contrassegnato come {{ type }}.
+    edit_post: Modifica il post
+    list_post: Lista il post
+    unlist_post: Rimuovi post
   timeline:
     undeleted: Non cancellato
     deleted: eliminato
@@ -1858,6 +1858,6 @@ ui:
     post_hide_list: Questo post è stato nascosto dall'elenco.
     post_show_list: Questo post è stato mostrato in elenco.
     post_reopen: Questo post è stato riaperto.
-    post_list: This post has been listed.
-    post_unlist: This post has been unlisted.
-    post_pending: Your post is awaiting review. This is a preview, it will be visible after it has been approved.
+    post_list: Questo post è stato inserito.
+    post_unlist: Questo post è stato rimosso.
+    post_pending: Il tuo post è in attesa di revisione. Sarà visibile dopo essere stato approvato.
