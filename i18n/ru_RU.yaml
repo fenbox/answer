@@ -142,7 +142,7 @@ backend:
   error:
     common:
       invalid_url:
-        other: Invalid URL.
+        other: Неверная URL.
     password:
       space_invalid:
         other: Пароль не должен содержать пробелы.
@@ -204,7 +204,7 @@ backend:
       already_deleted:
         other: Этот пост был удалён.
       under_review:
-        other: Your post is awaiting review. It will be visible after it has been approved.
+        other: Ваш пост ожидает проверки. Он станет видимым после одобрения.
       not_found:
         other: Вопрос не найден.
       cannot_deleted:
@@ -491,14 +491,14 @@ backend:
     accepted:
       other: принято
     edit:
-      other: edit
+      other: редактировать
   review:
     queued_post:
       other: Queued post
     flagged_post:
       other: Flagged post
     suggested_post_edit:
-      other: Suggested edits
+      other: Предложенные исправления
 # The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
@@ -680,8 +680,8 @@ ui:
       empty: Не может быть пустым.
     msg:
       empty: Пожалуйста, выбери причину.
-      not_a_url: URL format is incorrect.
-      url_not_match: URL origin does not match the current website.
+      not_a_url: Недопустимый формат URL.
+      url_not_match: URL адрес не соответствует текущему веб-сайту.
   tag_modal:
     title: Новый тег
     form:
@@ -1407,7 +1407,7 @@ ui:
       users: "Пользователи:"
       flags: "Флаги:"
       reviews: "Reviews:"
-      site_health: Site health
+      site_health: Здоровье сайта
       version: "Версия:"
       https: "HTTPS:"
       upload_folder: "Каталог загрузки:"
@@ -1422,12 +1422,12 @@ ui:
       database_size: "Размер базы данных:"
       storage_used: "Использовано хранилища: "
       uptime: "Время работы:"
-      links: Links
+      links: Ссылки
       plugins: Плагины
       github: GitHub
       blog: Блог
       contact: Контакты
-      forum: Forum
+      forum: Форум
       documents: Документы
       feedback: Обратная связь
       support: Поддержка
@@ -1538,7 +1538,7 @@ ui:
       status: Статус
       action: Действие
       change: Изменить
-      pending: Pending
+      pending: Ожидают
       filter:
         placeholder: "Фильтровать по заголовку, question:id"
     answers:
@@ -1576,8 +1576,8 @@ ui:
         validate: Контактный адрес электронной почты не может быть пустым.
         text: Адрес электронной почты контактного лица, ответственного за данный сайт.
       check_update:
-        label: Software updates
-        text: Automatically check for updates
+        label: Обновления программного обеспечения
+        text: Автоматически проверять наличие обновлений
     interface:
       page_title: Интерфейс
       language:
@@ -1796,13 +1796,13 @@ ui:
     approve_flag_tip: Do you approve this flag?
     approve_post_tip: Do you approve this post?
     approve_user_tip: Do you approve this user?
-    suggest_edits: Suggested edits
+    suggest_edits: Предложенные исправления
     flag_post: Flag post
     flag_user: Flag user
     queued_post: Queued post
     queued_user: Queued user
     filter_label: Type
-    reputation: reputation
+    reputation: репутация
     flag_post_type: Flagged this post as {{ type }}.
     flag_user_type: Flagged this user as {{ type }}.
     edit_post: Edit post
