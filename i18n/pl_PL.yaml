@@ -142,7 +142,7 @@ backend:
   error:
     common:
       invalid_url:
-        other: Invalid URL.
+        other: Nieprawidłowy URL.
     password:
       space_invalid:
         other: Hasło nie może zawierać spacji.
@@ -204,7 +204,7 @@ backend:
       already_deleted:
         other: Ten post został usunięty.
       under_review:
-        other: Your post is awaiting review. It will be visible after it has been approved.
+        other: Twój post oczekuje na recenzje. Będzie widoczny po jej akceptacji.
       not_found:
         other: Pytanie nie zostało odnalezione.
       cannot_deleted:
@@ -491,14 +491,14 @@ backend:
     accepted:
       other: zaakceptowane
     edit:
-      other: edit
+      other: edytuj
   review:
     queued_post:
-      other: Queued post
+      other: Post w kolejce
     flagged_post:
-      other: Flagged post
+      other: Post oznaczony
     suggested_post_edit:
-      other: Suggested edits
+      other: Sugerowane zmiany
 # The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
@@ -680,8 +680,8 @@ ui:
       empty: Nie może być puste.
     msg:
       empty: Proszę wybrać powód.
-      not_a_url: URL format is incorrect.
-      url_not_match: URL origin does not match the current website.
+      not_a_url: Format adresu URL jest nieprawidłowy.
+      url_not_match: Wskazany URL nie pasuje do bieżącej witryny.
   tag_modal:
     title: Utwórz nowy tag
     form:
@@ -1049,7 +1049,7 @@ ui:
     asked: zadał(a)
     update: Zmodyfikowane
     edit: edytowany
-    commented: commented
+    commented: skomentowano
     Views: Wyświetlone
     Follow: Obserwuj
     Following: Obserwuje
@@ -1067,7 +1067,7 @@ ui:
       title: Odpowiedzi
       score: Ocena
       newest: Najnowsze
-      oldest: Oldest
+      oldest: Najstarsze
       btn_accept: Akceptuj
       btn_accepted: Zaakceptowane
     write_answer:
@@ -1092,13 +1092,13 @@ ui:
       title: Otwórz ponownie ten post
       content: Czy na pewno chcesz go ponownie otworzyć?
     list:
-      confirm_btn: List
-      title: List this post
+      confirm_btn: Lista
+      title: Pokaż ten post
       content: Are you sure you want to list?
     unlist:
-      confirm_btn: Unlist
-      title: Unlist this post
-      content: Are you sure you want to unlist?
+      confirm_btn: Usuń z listy
+      title: Usuń ten post z listy
+      content: Czy na pewno chcesz usunąć z listy?
     pin:
       title: Przypnij ten post
       content: Czy na pewno chcesz przypiąć go globalnie? Ten post będzie wyświetlany na górze wszystkich list postów.
@@ -1120,7 +1120,7 @@ ui:
     save: Zapisz
     delete: Usuń
     undelete: Przywróć
-    list: List
+    list: Lista
     unlist: Unlist
     unlisted: Unlisted
     login: Zaloguj się
