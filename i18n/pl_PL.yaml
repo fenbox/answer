@@ -1155,11 +1155,11 @@ ui:
     post_lowercase: post
     filter: Filter
     ignore: Ignore
-    submit: Submit
-    normal: Normal
-    closed: Closed
-    deleted: Deleted
-    pending: Pending
+    submit: Prześlij
+    normal: Normalny
+    closed: Zamknięty
+    deleted: Usunięty
+    pending: Oczekujący
   search:
     title: Wyniki wyszukiwania
     keywords: Słowa kluczowe
@@ -1576,8 +1576,8 @@ ui:
         validate: Email kontaktowy nie jest poprawny.
         text: Adres email głównego kontaktu odpowiedzialnego za tę stronę.
       check_update:
-        label: Software updates
-        text: Automatically check for updates
+        label: Aktualizacjia oprogramowania
+        text: Automatycznie sprawdzaj dostępność aktualizacji
     interface:
       page_title: Interfejs
       language:
@@ -1792,20 +1792,20 @@ ui:
     edit_answer: Edytuj odpowiedź
     edit_tag: Edytuj tag
     empty: Nie ma więcej zadań do przeglądu.
-    approve_revision_tip: Do you approve this revision?
-    approve_flag_tip: Do you approve this flag?
-    approve_post_tip: Do you approve this post?
-    approve_user_tip: Do you approve this user?
+    approve_revision_tip: Czy akceptujesz tę wersję?
+    approve_flag_tip: Czy akceptujesz tę flagę?
+    approve_post_tip: Czy zatwierdzasz ten post?
+    approve_user_tip: Czy zatwierdzasz tego użytkownika?
     suggest_edits: Suggested edits
-    flag_post: Flag post
-    flag_user: Flag user
+    flag_post: Oznacz wpis
+    flag_user: Oznacz użytkownika
     queued_post: Queued post
     queued_user: Queued user
-    filter_label: Type
-    reputation: reputation
-    flag_post_type: Flagged this post as {{ type }}.
-    flag_user_type: Flagged this user as {{ type }}.
-    edit_post: Edit post
+    filter_label: Typ
+    reputation: reputacja
+    flag_post_type: Oznaczono ten wpis jako {{ type }}.
+    flag_user_type: Oznaczono tego użytkownika jako {{ type }}.
+    edit_post: Edytuj wpis
     list_post: List post
     unlist_post: Unlist post
   timeline:
@@ -1858,6 +1858,6 @@ ui:
     post_hide_list: Ten post został ukryty na liście.
     post_show_list: Ten post został wyświetlony na liście.
     post_reopen: Ten post został ponownie otwarty.
-    post_list: This post has been listed.
-    post_unlist: This post has been unlisted.
-    post_pending: Your post is awaiting review. This is a preview, it will be visible after it has been approved.
+    post_list: Ten wpis został umieszczony na liście.
+    post_unlist: Ten wpis został usunięty z listy.
+    post_pending: Twój wpis oczekuje na recenzje. Będzie widoczny po jej akceptacji.
