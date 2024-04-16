@@ -491,12 +491,12 @@ backend:
     accepted:
       other: acceptat
     edit:
-      other: edit
+      other: editează
   review:
     queued_post:
-      other: Queued post
+      other: Posturi în așteptare
     flagged_post:
-      other: Flagged post
+      other: Postare marcată
     suggested_post_edit:
       other: Suggested edits
 # The following fields are used for interface presentation(Front-end)
