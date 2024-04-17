@@ -1067,7 +1067,7 @@ ui:
       title: Răspunsuri
       score: Scor
       newest: Cele mai noi
-      oldest: Oldest
+      oldest: Cel mai vechi
       btn_accept: Acceptă
       btn_accepted: Acceptă
     write_answer:
@@ -1538,7 +1538,7 @@ ui:
       status: Stare
       action: Actiune
       change: Schimbare
-      pending: Pending
+      pending: În așteptare
       filter:
         placeholder: "Filtrează după titlu, întrebare: id"
     answers:
@@ -1801,12 +1801,12 @@ ui:
     flag_user: Flag user
     queued_post: Queued post
     queued_user: Queued user
-    filter_label: Type
+    filter_label: Tip
     reputation: reputation
-    flag_post_type: Flagged this post as {{ type }}.
+    flag_post_type: Acest post a fost marcat de {{ type }}.
     flag_user_type: Flagged this user as {{ type }}.
-    edit_post: Edit post
-    list_post: List post
+    edit_post: Editează postarea
+    list_post: Listează postarea
     unlist_post: Unlist post
   timeline:
     undeleted: restabilește
