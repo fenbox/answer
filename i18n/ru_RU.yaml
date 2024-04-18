@@ -502,7 +502,7 @@ backend:
 # The following fields are used for interface presentation(Front-end)
 ui:
   how_to_format:
-    title: Как отформатировать
+    title: 'Форматирование:'
     desc: >-
       <ul class="mb-0"><li><p class="mb-2">создание ссылок: </p><pre class="mb-2"><code>&lt;https://url.com&gt;<br/><br/>[Title](https://url.com)</code></pre></li><li><p class="mb-2">пробел между абзацами</p></li><li><p class="mb-2"><em>_italic_</em> или **<strong>bold</strong>**</p></li><li><p class="mb-2">отступ для кода - 4 пробела</p></li><li><p class="mb-2">тег  <code>&gt;</code> для цитаты в начале строки</p></li><li><p class="mb-2">обратные кавычки для строки кода <code>`like _this_`</code></p></li><li><p class="mb-2">тройные обратные кавычки для блоков кода <code>`</code></p><pre class="mb-0"><code>```<br/>тут код<br/>```</code></pre></li></ul>
   pagination:
@@ -785,7 +785,7 @@ ui:
     sort_buttons:
       popular: Популярное
       name: Имя
-      newest: Самые новые
+      newest: Последние
     button_follow: Подписаться
     button_following: Подписки
     tag_label: вопросы
@@ -809,9 +809,9 @@ ui:
             empty: Заголовок не может быть пустым.
             range: Заголовок должен быть меньше 150 символов
         body:
-          label: Тело вопроса
+          label: 'Вопрос:'
           msg:
-            empty: Тело вопроса не может быть пустым.
+            empty: Вопрос не может быть пустым.
         tags:
           label: Теги
           msg:
@@ -824,7 +824,7 @@ ui:
           label: Изменить краткое описание
           placeholder: >-
             Кратко опишите вносимые изменения (исправлена орфография, исправлена грамматика, улучшено форматирование)
-    btn_post_question: Задайте свой вопрос
+    btn_post_question: Задать вопрос
     btn_save_edits: Сохранить изменения
     answer_question: Ответить на свой собственный вопрос
     post_question&answer: Опубликуйте свой вопрос и ответ
@@ -832,7 +832,7 @@ ui:
     add_btn: Тег
     create_btn: новый тег
     search_tag: Поиск тега
-    hint: "Опишите, о чем ваш вопрос, требуется хотя бы один тег."
+    hint: "Добавьте хотя бы один тег."
     no_result: Нет соответствующих тэгов
     tag_required_text: Обязательный тег (хотя бы один)
   header:
@@ -1066,7 +1066,7 @@ ui:
     answers:
       title: Ответы
       score: Оценка
-      newest: Самые новые
+      newest: Последние
       oldest: Oldest
       btn_accept: Принять
       btn_accepted: Принято
@@ -1170,7 +1170,7 @@ ui:
     more: Ещё
     sort_btns:
       relevance: По релевантности
-      newest: Самые новые
+      newest: Последние
       active: Активные
       score: Оценки
       more: Больше
@@ -1217,8 +1217,8 @@ ui:
     x_answers: "{{ count }} ответов"
     questions: Вопросы
     answers: Ответы
-    newest: Самые новые
-    active: Активный
+    newest: Последние
+    active: Активные
     frequent: Популярные
     score: Оценка
     unanswered: Без ответа
@@ -1238,7 +1238,7 @@ ui:
     reputation: Репутация
     comments: Комментарии
     votes: Голоса
-    newest: Самые новые
+    newest: Последние
     score: Оценки
     edit_profile: Редактировать профиль
     visited_x_days: "Посещено {{ count }} дней"
@@ -1405,7 +1405,7 @@ ui:
       comments: "Комментарии:"
       votes: "Голоса:"
       users: "Пользователи:"
-      flags: "Флаги:"
+      flags: "Жалобы:"
       reviews: "Reviews:"
       site_health: Здоровье сайта
       version: "Версия:"
@@ -1502,7 +1502,7 @@ ui:
       all: Все
       staff: Сотрудники
       more: Ещё
-      inactive: Неактивный
+      inactive: Неактивные
       suspended: Заблокированные
       deleted: Удаленные
       normal: Обычный
