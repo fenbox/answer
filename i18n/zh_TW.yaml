@@ -738,7 +738,7 @@ ui:
   dates:
     long_date: MM月DD日
     long_date_with_year: "YYYY年MM月DD日"
-    long_date_with_time: "YYYY年MM月DD日 HH:mm"
+    long_date_with_time: "YYYY 年 MM 月 DD 日 HH:mm"
     now: 剛剛
     x_seconds_ago: "{{count}} 秒前"
     x_minutes_ago: "{{count}} 分鐘前"
@@ -756,7 +756,7 @@ ui:
     btn_flag: 舉報
     btn_save_edits: 保存
     btn_cancel: 取消
-    show_more: "{{count}}條剩餘評論"
+    show_more: "{{count}} 條剩餘評論"
     tip_question: >-
       通过評論询问更多问题或提出改進建議。避免在評論中回答問題。
     tip_answer: >-
