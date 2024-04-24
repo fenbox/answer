@@ -78,10 +78,10 @@ backend:
         other: Level 1 (weniger Reputation für privates Team, Gruppen)
     level_2:
       description:
-        other: Level 2 (niedrige Reputation erforderlich für Start-Community)
+        other: Level 2 (niedrige Reputation für Startup-Community)
     level_3:
       description:
-        other: Level 3 (hohe Reputation, für ausgereifte Community)
+        other: Level 3 (hohe Reputation für eine reife Community)
     level_custom:
       description:
         other: Benutzerdefinierter Level
