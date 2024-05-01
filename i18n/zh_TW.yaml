@@ -29,9 +29,9 @@ backend:
     database_error:
       other: 資料庫錯誤。
     forbidden_error:
-      other: Forbidden.
+      other: 訪問被拒絕。
     duplicate_request_error:
-      other: Duplicate submission.
+      other: 提交重複。
   action:
     report:
       other: 舉報
@@ -42,11 +42,11 @@ backend:
     close:
       other: 關閉
     reopen:
-      other: Reopen
+      other: 再次開啟。
     forbidden_error:
-      other: Forbidden.
+      other: 訪問被拒絕。
     pin:
-      other: Pin
+      other: 置頂
     hide:
       other: Unlist
     unpin:
