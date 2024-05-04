@@ -142,7 +142,7 @@ backend:
   error:
     common:
       invalid_url:
-        other: 不合法的 URL
+        other: 无效的 URL。
     password:
       space_invalid:
         other: 密码不得含有空格。
