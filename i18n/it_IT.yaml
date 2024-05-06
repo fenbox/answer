@@ -999,8 +999,10 @@ ui:
       change_email_info: >-
         Abbiamo inviato una mail a quell'indirizzo. Si prega di seguire le istruzioni di conferma.
       email:
-        label: Nuova email
-        msg: La nuova email non può essere vuota.
+        label: Email
+      new_email:
+        label: New email
+        msg: New email cannot be empty.
       pass:
         label: Password attuale
         msg: La password non può essere vuota
@@ -1160,6 +1162,7 @@ ui:
     closed: Chiuso
     deleted: Eliminato
     pending: In attesa
+    more: More
   search:
     title: Risultati della ricerca
     keywords: Parole chiave
@@ -1176,7 +1179,7 @@ ui:
       more: Altro
     tips:
       title: Suggerimenti per ricerca avanzata
-      tag: "<1>[tag]</1> cerca dentro un tag"
+      tag: "<1>[tag]</1> search with a tag"
       user: "<1>user:username</1> ricerca per autore"
       answer: "<1>risposte:0</1> domande senza risposta"
       score: "<1>punteggio:3</1> messaggi con un punteggio di 3+"
@@ -1774,6 +1777,9 @@ ui:
       level:
         label: Livello di reputazione richiesto 
         text: Scegli la reputazione richiesta per i privilegi
+      msg:
+        should_be_number: the input should be number
+        number_larger_1: number should be equal or larger than 1
   form:
     optional: (opzionale)
     empty: non può essere vuoto
