@@ -518,7 +518,7 @@ ui:
     edit_tag: タグを編集
     ask_a_question: 質問を追加
     edit_question: 質問を編集
-    edit_answer: 回答を編集　
+    edit_answer: 回答を編集
     search: 検索
     posts_containing: Posts containing
     settings: 設定
@@ -763,8 +763,8 @@ ui:
       Use comments to reply to other users or notify them of changes. If you are adding new information, edit your post instead of commenting.
     tip_vote: It adds something useful to the post
   edit_answer:
-    title: 回答を編集　
-    default_reason: 回答を編集　
+    title: 回答を編集
+    default_reason: 回答を編集
     default_first_reason: 回答を追加
     form:
       fields:
@@ -1000,6 +1000,8 @@ ui:
         We've sent an email to that address. Please follow the confirmation instructions.
       email:
         label: New email
+      new_email:
+        label: New email
         msg: New email cannot be empty.
       pass:
         label: Current password
@@ -1160,6 +1162,7 @@ ui:
     closed: Closed
     deleted: Deleted
     pending: Pending
+    more: More
   search:
     title: Search Results
     keywords: Keywords
@@ -1774,6 +1777,9 @@ ui:
       level:
         label: Reputation required level
         text: Choose the reputation required for the privileges
+      msg:
+        should_be_number: the input should be number
+        number_larger_1: number should be equal or larger than 1
   form:
     optional: (optional)
     empty: cannot be empty
