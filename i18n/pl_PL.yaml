@@ -999,8 +999,10 @@ ui:
       change_email_info: >-
         Wysłaliśmy e-mail na ten adres. Prosimy postępować zgodnie z instrukcjami potwierdzającymi.
       email:
-        label: Nowy email
-        msg: Nowy adres email nie może być pusty.
+        label: Email
+      new_email:
+        label: New email
+        msg: New email cannot be empty.
       pass:
         label: Aktualne hasło
         msg: Hasło nie może być puste.
@@ -1160,6 +1162,7 @@ ui:
     closed: Zamknięty
     deleted: Usunięty
     pending: Oczekujący
+    more: More
   search:
     title: Wyniki wyszukiwania
     keywords: Słowa kluczowe
@@ -1176,7 +1179,7 @@ ui:
       more: Więcej
     tips:
       title: Porady dotyczące wyszukiwania zaawansowanego
-      tag: "<1>[tag]</1> wyszukiwanie w obrębie tagu"
+      tag: "<1>[tag]</1> search with a tag"
       user: "<1>user:username</1> wyszukiwanie według autora"
       answer: "<1> answers:0 </1> pytania bez odpowiedzi"
       score: "<1>score:3</1> posty z oceną 3+"
@@ -1774,6 +1777,9 @@ ui:
       level:
         label: Wymagany poziom reputacji
         text: Wybierz reputację wymaganą dla uprawnień
+      msg:
+        should_be_number: the input should be number
+        number_larger_1: number should be equal or larger than 1
   form:
     optional: (opcjonalne)
     empty: nie może być puste
