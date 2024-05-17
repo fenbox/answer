@@ -78,7 +78,7 @@ backend:
         other: 'Livello 1 (per team o gruppi privati: richiesta reputazione limitata)'
     level_2:
       description:
-        other: 'Livello 2 (per startup community: richiesta reputazione scarsa)'
+        other: 'Livello 2 (per startup community: richiesta reputazione scarsa) '
     level_3:
       description:
         other: 'Livello 3 (per community riconosciute: richiesta reputazione alta)'
